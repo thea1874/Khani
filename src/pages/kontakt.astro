@@ -3,16 +3,48 @@ import Header from "../components/Header.astro";
 ---
 
 <html lang="en">
-	<head>
-		<meta charset="utf-8" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<meta name="viewport" content="width=device-width" />
-		<meta name="generator" content={Astro.generator} />
-		<title>Astro</title>
-	</head>
-	<Header/>
-	<body>
-		<h1>video her</h1>
-		<h3>Mest populære</h3>
-	</body>
+  <head>
+    <meta charset="utf-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="viewport" content="width=device-width" />
+    <meta name="generator" content={Astro.generator} />
+    <title>Astro</title>
+  </head>
+  <Header />
+  <body>
+    <h1>KONTAKT</h1>
+    <h3>SKRIV TIL OS!</h3>
+
+    <div class="form">
+      <form>
+        <input type="text" id="navn" placeholder="NAVN" />
+        <input type="text" id="telefon" placeholder="TELEFON" />
+        <input type="text" id="email" placeholder="EMAIL" />
+        <input type="text" id="kommentar" placeholder="KOMMENTAR" />
+
+        <input type="submit" value="Submit" />
+      </form>
+    </div>
+  </body>
+
+  <style>
+    h1,
+    h3 {
+      text-align: center;
+    }
+    form {
+      text-align: center;
+    }
+    .kommentar {
+      width: 100%;
+      height: 150px;
+      padding: 12px 20px;
+      box-sizing: border-box;
+      border: 2px solid #ccc;
+      border-radius: 4px;
+      background-color: #f8f8f8;
+      font-size: 16px;
+      resize: none;
+    }
+  </style>
 </html>
