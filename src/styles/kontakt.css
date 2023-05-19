@@ -1,0 +1,47 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.centered {
+  position: absolute;
+  top: 60%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  font-size: 70px;
+  font-family: "montserrat";
+}
+
+h3 {
+  text-align: center;
+}
+
+form {
+  text-align: center;
+}
+
+input {
+  background-color: rgb(251, 246, 222);
+  border: 1px solid rgb(84, 191, 212);
+  padding: 10px;
+}
+
+input[type="submit"]:hover {
+  background-color: rgb(84, 191, 212);
+  color: white;
+}
+#kommentar {
+  width: 60%;
+  height: 150px;
+  padding: 12px 20px;
+  resize: none;
+  margin-top: 20px;
+}

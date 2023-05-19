@@ -8,11 +8,15 @@ import Header from "../components/Header.astro";
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <meta name="viewport" content="width=device-width" />
     <meta name="generator" content={Astro.generator} />
+    <link rel="stylesheet" href="src/styles/kontakt.css" />
     <title>Astro</title>
   </head>
   <Header />
   <body>
-    <h1>KONTAKT</h1>
+    <img src="" alt="" />
+    <h1 class="centered">KONTAKT</h1>
+    <img class="baggrund" src="img/kontakt/kontakt.webP" alt="kontakt" />
+
     <h3>SKRIV TIL OS!</h3>
 
     <div class="form">
@@ -25,32 +29,4 @@ import Header from "../components/Header.astro";
       </form>
     </div>
   </body>
-
-  <style>
-    h1,
-    h3 {
-      text-align: center;
-    }
-    form {
-      text-align: center;
-    }
-
-    input {
-      background-color: rgb(251, 246, 222);
-      border: 1px solid rgb(84, 191, 212);
-      padding: 10px;
-    }
-
-    input[type="submit"]:hover {
-      background-color: rgb(84, 191, 212);
-      color: white;
-    }
-    #kommentar {
-      width: 60%;
-      height: 150px;
-      padding: 12px 20px;
-      resize: none;
-      margin-top: 20px;
-    }
-  </style>
 </html>
