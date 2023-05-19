@@ -16,28 +16,34 @@ img {
   left: 50%;
   transform: translate(-50%, -50%);
   color: white;
-  font-size: 70px;
-  font-family: "montserrat";
+  font-size: 90px;
+  font-family: "Hubballi";
 }
 
 h3 {
   text-align: center;
+  padding: 50px;
+  font-size: 50px;
+  font-family: "Hubballi";
 }
 
 form {
   text-align: center;
+  padding-bottom: 130px;
 }
 
 input {
-  background-color: rgb(251, 246, 222);
-  border: 1px solid rgb(84, 191, 212);
+  background-color: rgb(251, 248, 233);
+  border: none;
   padding: 10px;
+  box-shadow: 2px 2px rgb(84, 191, 212);
 }
 
 input[type="submit"]:hover {
   background-color: rgb(84, 191, 212);
   color: white;
 }
+
 #kommentar {
   width: 60%;
   height: 150px;
