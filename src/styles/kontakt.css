@@ -29,7 +29,7 @@ h3 {
 
 form {
   text-align: center;
-  padding-bottom: 130px;
+  padding-bottom: 70px;
 }
 
 input {
@@ -37,6 +37,11 @@ input {
   border: none;
   padding: 10px;
   box-shadow: 2px 2px rgb(84, 191, 212);
+}
+
+input[type="submit"] {
+  border: 1px solid rgb(84, 191, 212);
+  background-color: white;
 }
 
 input[type="submit"]:hover {
@@ -50,4 +55,16 @@ input[type="submit"]:hover {
   padding: 12px 20px;
   resize: none;
   margin-top: 20px;
+}
+
+@media (min-width: 700px) {
+  .kontaktgrid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 30px;
+    margin: auto;
+    margin-block: 60px;
+    width: 90%;
+    place-content: center;
+  }
 }
