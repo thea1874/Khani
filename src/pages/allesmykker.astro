@@ -1,0 +1,38 @@
+---
+const url = "https://voswczuqwytgtrfxmtvr.supabase.co/rest/v1/KHANI";
+        
+const options = {
+  headers: {
+    apikey: "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InZvc3djenVxd3l0Z3RyZnhtdHZyIiwicm9sZSI6ImFub24iLCJpYXQiOjE2ODQzOTMzOTEsImV4cCI6MTk5OTk2OTM5MX0.csDWOEGrSLAkmRKqdmbtqsyIpfbTrBvZyRdo4ffFDnc",
+  },
+};
+const response = await fetch(url, options);
+const data = await response.json();
+
+import Header from "../components/Header.astro";
+import Allesmykker from "../components/Allesmykker.astro";
+
+---
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="viewport" content="width=device-width" />
+    <meta name="generator" content={Astro.generator} />
+    <link rel="stylesheet" href="src/styles/kontakt.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Hubballi&display=swap" rel="stylesheet" />
+    <title>Astro</title>
+  </head>
+<Header/>
+
+
+{
+data.map((act) => {
+    return <Allesmykker id={act.id} IMG={act.IMG} NAME={act.NAME} KATEGORI={act.KATEGORI} FARVE={act.FARVE} PRIS={act.PRIS}  />;
+  })
+}
+
+
+
