@@ -1,5 +1,6 @@
 ---
 import Header from "../components/Header.astro";
+import Displaybillede from "../components/Displaybillede.astro";
 ---
 
 <html lang="en">
@@ -14,14 +15,8 @@ import Header from "../components/Header.astro";
 	<Header/>
 	<body>
 
-		<div class="stortbillede">
-			<img src="img/omos/omos.webp" alt="OM OS">
-			<div class="text-overlay">
-			  OM OS
-			</div>
+		<Displaybillede baggrund="img/omos/omos.webp" text="OM OS" />
 
-
-		<img src="img/omos/omos.webp" alt="billede">
 		<h1>HVEM ER KHANI?</h1>
 		<p>Khani blev grundlagt i 2022 af Thea Salmony og Christian Rydahl. Fra Khanis begyndelse har vi skabt vores eget brand, hvor vi udelukkende sælger vandfaste smykker for alle - og til alle. Vores design drager inspiration fra Grækenland, sol og sommer, hvilket afspejler sig i smykkernes udseende og navne.</p>
 	</body>
