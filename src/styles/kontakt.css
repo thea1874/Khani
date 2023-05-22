@@ -10,6 +10,11 @@ h3 {
   font-size: 50px;
   font-family: "Hubballi";
 }
+img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
 
 form {
   text-align: center;
