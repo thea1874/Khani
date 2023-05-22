@@ -9,24 +9,3 @@ img {
   height: auto;
   display: block;
 }
-
-.centered {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  color: white;
-  font-size: 90px;
-  font-family: "Hubballi";
-}
-
-.grid_hjaelp {
-  display: flex;
-}
-
-.grid_hjaelp > div {
-  background-color: #f1f1f1;
-  margin: 10px;
-  padding: 20px;
-  font-size: 30px;
-}
