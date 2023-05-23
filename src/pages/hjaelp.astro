@@ -16,6 +16,9 @@ import Header from "../components/Header.astro";
     <Displaybillede baggrund="img/hjaelp/hjaelp.webp" text="VIGTIG VIDEN" />
 
     <h2>HVAD ER VANDFASTE SMYKKER?</h2>
+    <div class="spg">
+      <img src="img/hjaelp/spg.webp" alt="billede" />
+    </div>
     <div class="grid1-1">
       <div>
         <p>
@@ -63,6 +66,13 @@ import Header from "../components/Header.astro";
     h2 {
       margin-left: 100px;
       margin-top: 100px;
+    }
+
+    .spg {
+      max-width: 30%;
+      margin: auto;
+
+      position: absolute;
     }
     .grid1-1 {
       margin: 50px 50px 50px 50px;
