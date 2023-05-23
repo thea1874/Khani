@@ -1,10 +1,21 @@
 :root {
   /* Farver */
-  --primary-color: #7cc9e7;
-  --secondary-color: #f4f0e4;
-  --background-color: #ffffff;
+  --brand-color: #7cc9e7;
 
+  --surface-beige: #f4f0e4;
   --surface-white: #ffffff;
+  --surface-dropdown: #fafafa;
+
+  --text-black: #000000;
+  --text-blue: #7cc9e7;
+  --text-white: #ffffff;
+
+  /* Typografi */
+  --font-size-h1: 70px;
+  --font-size-h2: 35px;
+  --font-size-h3: 25px;
+  --font-size-p: 17px;
+  --font-size-dropdown: 12px;
 }
 
 * {
@@ -19,29 +30,39 @@ img {
   height: auto;
 }
 
+html {
+  height: 100%;
+  background-color: var(--surface-white);
+}
+
+body {
+  height: 100%;
+  line-height: 3.5ch;
+}
+
 /* Font */
 
 h1 {
   font-family: "Montserrat", sans-serif;
   font-weight: 500;
-  font-size: 70px;
   color: var(--text-header);
+  font-size: var(--font-size-h1);
 }
 
 h2 {
   font-family: "Playfair Display", serif;
   font-weight: 400;
-  font-size: 35px;
+  font-size: var(--font-size-h2);
 }
 
 h3 {
   font-family: "Hubballi", cursive;
   font-weight: 400;
-  font-size: 25px;
+  font-size: var(--font-size-h3);
 }
 
 p {
   font-family: "Open Sans", sans-serif;
   font-weight: 400;
-  font-size: 17px;
+  font-size: var(--font-size-p);
 }
