@@ -1,140 +1,138 @@
 <header>
-    <div class="hide">
-      <a href="/index.html"><img class="logo" src="/img/Logo.svg" alt="billede" /></a>
-    </div>
-    <nav class="hide">
-      <ul>
+  <div class="hide">
+    <a href="/index.html"><img class="logo" src="/img/Logo.svg" alt="billede" /></a>
+  </div>
+  <nav class="hide">
+    <ul>
+      <li class="dropdown">
+        <button class="dropbtn"><a href="/shop">SHOP<i class="arrow down"></i></a></button>
+        <div class="dropdown-content">
+          <a href="/allesmykker">Alle smykker</a>
+          <a href="">Halskæder</a>
+          <a href="">Armbånd</a>
+          <a href="">Ringe</a>
+          <a href="">Øreringe</a>
+          <a href="">Ankelkæder</a>
+        </div>
+      </li>
+      <li><a href="/hjaelp">HJÆLP</a></li>
+      <li><a href="/kontakt">KONTAKT</a></li>
+      <li><a href="/omos">OM OS</a></li>
+    </ul>
+  </nav>
+</header>
 
-        <li class="dropdown">
-          <button class="dropbtn"><a href="/shop">SHOP<i class="arrow down"></i></a></button>
-          <div class="dropdown-content">
-            <a href="/allesmykker">Allesmykker</a>
-            <a href="">Halskæder</a>
-            <a href="">Armbånd</a>
-            <a href="">Ringe</a>
-            <a href="">Øreringe</a>
-            <a href="">Ankelkæder</a>
-          </div>
-        </li>
-        <li><a href="/hjaelp">HJÆLP</a></li>
-        <li><a href="/kontakt">KONTAKT</a></li>
-        <li><a href="/omos">OM OS</a></li>
-      </ul>
-    </nav>
-  </header>
-  
-  <style>
-    @media screen and (max-width: 1000px) {
-      .hide {
-        display: none;
-      }
-    }
-    header {
-      position: sticky;
-      justify-content: space-between;
-      display: flex;
-      gap: 1rem;
-      padding: 8px 257px 8px 190px;
-      align-items: center;
-      margin-bottom: -20px;
-      white-space: nowrap;
-    }
-  
-    @media (max-width: 1300px) {
-      .logo {
-        margin-left: -80px;
-        margin-right: 30px;
-      }
-    }
-  
-    .logo {
-      width: 6.2rem;
-      display: flex;
-      align-content: center;
-      height: 5.1rem;
-    }
-  
-    nav ul a {
-      text-decoration: none;
-      color: black;
-      font-size: large;
-      list-style-type: none;
-    }
-    ul {
-      text-align: center;
-      list-style: none;
-      display: flex;
-      gap: 4rem;
-      align-items: baseline;
-    }
-  
-    header li a {
-      font-family: "Open Sans", sans-serif;
-      text-transform: uppercase;
-      font-weight: 400;
-      font-size: 12px;
-      color: var(--text-header);
-    }
-  
-    header a:hover {
-      color:#7CC9E7
-    }
-  
-    .dropdown {
-      float: left;
-      overflow: hidden;
-    }
-  
-    .dropdown .dropbtn {
-      font-family: "Open Sans", sans-serif;
-      color: var(--text-header);
-      margin: 0;
-      font-size: 12px;
-      border: none;
-      outline: none;
-      background-color: inherit;
-      text-transform: uppercase;
-    }
-  
-    .dropdown-content {
+<style>
+  @media screen and (max-width: 1000px) {
+    .hide {
       display: none;
-      position: absolute;
-      background-color: var(--default-white);
-      min-width: 180px;
-      box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
-      z-index: 1;
     }
-  
-    .dropdown-content a {
-      float: none;
-      color: var(--text-header);
-      padding: 10px 50px 10px 20px;
-      font-size: 12px;
-      font-weight: 400;
-      text-decoration: none;
-      display: block;
-      text-align: left;
+  }
+  header {
+    position: sticky;
+    justify-content: space-between;
+    display: flex;
+    gap: 1rem;
+    padding: 8px 257px 8px 190px;
+    align-items: center;
+    margin-bottom: -20px;
+    white-space: nowrap;
+  }
+
+  @media (max-width: 1300px) {
+    .logo {
+      margin-left: -80px;
+      margin-right: 30px;
     }
-  
-    .dropdown-content a:hover {
-      background-color: var(--primary-color);
-      color: var(--default-white);
-    }
-  
-    .dropdown:hover .dropdown-content {
-      display: block;
-    }
-  
-    .arrow {
-      border: solid var(--text-header);
-      border-width: 0 1.5px 1.5px 0;
-      display: inline-block;
-      padding: 2px;
-      vertical-align: 3px;
-    }
-    .down {
-      transform: rotate(45deg);
-      -webkit-transform: rotate(45deg);
-    }
-  </style>
-  
+  }
+
+  .logo {
+    width: 6.2rem;
+    display: flex;
+    align-content: center;
+    height: 5.1rem;
+  }
+
+  nav ul a {
+    text-decoration: none;
+    color: black;
+    font-size: large;
+    list-style-type: none;
+  }
+  ul {
+    text-align: center;
+    list-style: none;
+    display: flex;
+    gap: 4rem;
+    align-items: baseline;
+  }
+
+  header li a {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 400;
+    font-size: 12px;
+    text-transform: uppercase;
+    color: var(--text-header);
+  }
+
+  header a:hover {
+    color: #7cc9e7;
+  }
+
+  .dropdown {
+    float: left;
+    overflow: hidden;
+  }
+
+  .dropdown .dropbtn {
+    font-family: "Open Sans", sans-serif;
+    color: var(--text-header);
+    margin: 0;
+    font-size: 12px;
+    border: none;
+    outline: none;
+    background-color: inherit;
+    text-transform: uppercase;
+  }
+
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: var(--default-white);
+    min-width: 180px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+  }
+
+  .dropdown-content a {
+    float: none;
+    color: var(--text-header);
+    padding: 10px 50px 10px 20px;
+    font-size: 12px;
+    font-weight: 400;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+  }
+
+  .dropdown-content a:hover {
+    background-color: var(--primary-color);
+    color: var(--default-white);
+  }
+
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+
+  .arrow {
+    border: solid var(--text-header);
+    border-width: 0 1.5px 1.5px 0;
+    display: inline-block;
+    padding: 2px;
+    vertical-align: 3px;
+  }
+  .down {
+    transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+  }
+</style>
