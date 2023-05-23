@@ -32,9 +32,34 @@ import Header from "../components/Header.astro";
         </p>
       </div>
     </div>
+
+    <section>
+      <div class="hjaelpgrid">
+        <div class="hjaelpimg">
+          <img src="img/hjaelp/hjaelp2.webp" alt="billede" />
+        </div>
+
+        <div class="hjaelpimg">
+          <img src="img/hjaelp/hjaelp3.webp" alt="billede" />
+        </div>
+
+        <div class="hjaelpimg">
+          <img src="img/hjaelp/hjaelp4.webp" alt="billede" />
+        </div>
+
+        <div class="hjaelpimg">
+          <img src="img/hjaelp/hjaelp5.webp" alt="billede" />
+        </div>
+      </div>
+    </section>
   </body>
 
   <style>
+    img {
+      width: 100%;
+      height: auto;
+      display: block;
+    }
     h2 {
       margin-left: 100px;
       margin-top: 100px;
@@ -57,6 +82,18 @@ import Header from "../components/Header.astro";
       p {
         margin: 50px 50px 90px 0px;
         line-height: 3.5ch;
+      }
+    }
+
+    @media (min-width: 700px) {
+      .hjaelpgrid {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        gap: 30px;
+        margin: auto;
+        margin-block: 60px;
+        width: 90%;
+        place-content: center;
       }
     }
   </style>
