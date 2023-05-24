@@ -5,7 +5,7 @@ const { id, NAME, IMG, PRIS } = Astro.props;
 <article>
   <figure class="container1">
     <img src={`/img/${IMG}`} alt="" height="250" width="250"/>
-    <p class="navn">{NAME}</p>
+    <h3 class="navn">{NAME}</h3>
     <p class="pris">{PRIS}</p>
   </figure>
 </article>
@@ -16,6 +16,13 @@ const { id, NAME, IMG, PRIS } = Astro.props;
     color: var(--brand-color);
     transition: 0.3s;
     image-resolution: ;
+  }
+
+  p{
+  font-family: "Hubballi", cursive;
+  font-weight: 400;
+  font-size: var(--font-size-h3);
+  line-height: var(--line-height-h3);
   }
 
 
