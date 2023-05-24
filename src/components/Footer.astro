@@ -1,0 +1,98 @@
+<footer>
+  <div class="flex_container">
+    <div class="flex-item-left">
+      <ul>
+        <li style="font-weight: bold;font-size: 18px">POLITIKKER</li>
+        <li>Returnering</li>
+        <li>Persondata</li>
+        <li>Servicevilkår</li>
+        <li>Leveringspoltik</li>
+      </ul>
+    </div>
+    <div class="flex-item-right">
+      <ul>
+        <li style="font-weight: bold;font-size: 18px">KONTAKT</li>
+        <li>E-mail: khanismykker@gmail.com</li>
+        <li>@khanismykker</li>
+        <div class="icons">
+          <a href="https://www.facebook.com/khanismykker" class="fa fa-facebook"></a>
+          <a href="https://www.instagram.com/khanismykker/" class="fa fa-instagram" style="margin-left: 10px"></a>
+          <a href="https://www.tiktok.com/@khanismykker" class="fab fa-tiktok tiktok-icon" style="margin-left: 10px"></a>
+        </div>
+      </ul>
+    </div>
+  </div>
+</footer>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+
+<style>
+  .flex_container {
+    display: flex;
+    flex-direction: row;
+  }
+
+  @media (max-width: 800px) {
+    .flex_container {
+      flex-direction: column;
+      align-items: flex-start;
+      padding: 40px;
+    }
+  }
+
+  .flex-item-left {
+    display: flex;
+    flex: 50%;
+    justify-content: center;
+  }
+
+  .flex-item-right {
+    display: flex;
+    flex: 50%;
+    justify-content: center;
+  }
+
+  @media (max-width: 800px) {
+    .flex-item-right {
+      margin-top: 40px;
+    }
+  }
+
+  li {
+    font-family: "Hubballi", cursive;
+    list-style-type: none;
+    text-align: left;
+    font-size: var(--font-size-p);
+  }
+
+  .icons {
+    margin-top: 10px;
+  }
+
+  .fa {
+    padding: 10px;
+    width: 35px;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 50%;
+  }
+
+  .fa-facebook {
+    background: var(--surface-black);
+    color: var(--surface-white);
+  }
+
+  .fa-instagram {
+    background: var(--surface-black);
+    color: var(--surface-white);
+  }
+
+  .tiktok-icon {
+    padding: 10px;
+    width: 35px;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 50%;
+    background: var(--surface-black);
+    color: var(--surface-white);
+  }
+</style>
