@@ -1,6 +1,7 @@
 ---
 import Displaybillede from "../components/Displaybillede.astro";
 import Header from "../components/Header.astro";
+import Footer from "../components/Footer.astro";
 ---
 
 <html lang="en">
@@ -27,16 +28,21 @@ import Header from "../components/Header.astro";
   </head>
   <Header />
   <body>
-    <Displaybillede baggrund="img/kontakt/kontakt.webp" text="KONTAKT" />
+    <Displaybillede baggrund="img/kontakt/kontakt.webP" text="KONTAKT" />
 
-    <h3>SKRIV TIL OS!</h3>
+    <h2>SKRIV TIL OS</h2>
 
     <div class="form">
       <form>
-        <input type="text" id="navn" placeholder="NAVN" />
-        <input type="text" id="telefon" placeholder="TELEFON" />
+        <div>
+          <input type="text" id="navn" placeholder="NAVN" />
+          <input type="text" id="telefon" placeholder="TELEFON" />
+        </div>
         <input type="text" id="email" placeholder="EMAIL" />
-        <input type="text" id="kommentar" placeholder="KOMMENTAR" />
+        <div>
+          <input type="text" id="kommentar" placeholder="KOMMENTAR" />
+        </div>
+
         <input type="submit" value="SUBMIT" />
       </form>
     </div>
@@ -60,5 +66,6 @@ import Header from "../components/Header.astro";
         </div>
       </div>
     </section>
+    <Footer />
   </body>
 </html>

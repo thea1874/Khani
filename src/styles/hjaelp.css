@@ -1,1 +1,97 @@
+img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+h2 {
+  margin-left: 100px;
+  margin-top: 100px;
+}
 
+.spg {
+  max-width: 30%;
+  margin: auto;
+  margin-left: 1000px;
+  position: absolute;
+}
+.grid1-1 {
+  margin: 50px 50px 50px 50px;
+}
+
+p {
+  margin: 20px 50px 20px 0px;
+  line-height: 3.5ch;
+}
+
+@media (min-width: 750px) {
+  .grid1-1 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin: 120px 100px 120px 100px;
+  }
+  p {
+    margin: 50px 50px 90px 0px;
+    line-height: 3.5ch;
+  }
+}
+
+@media (min-width: 700px) {
+  .hjaelpgrid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 30px;
+    margin: auto;
+    margin-block: 60px;
+    width: 90%;
+    place-content: center;
+  }
+}
+
+.ringe_guide {
+  text-align: center;
+}
+.guide {
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.grid1-1-1 {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+.tal {
+  max-width: 20%;
+}
+
+.tabel {
+  max-width: 80%;
+  margin: auto;
+  padding-bottom: 90px;
+}
+
+.halskaede_guide {
+  text-align: center;
+  margin: auto;
+  padding-block: 70px;
+}
+
+.halskaedeguide {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.baggrund {
+  background-color: #f4f0e4;
+}
+
+.billedeguide {
+  max-width: 60%;
+  margin: 0px 0px 100px 100px;
+}
+
+.rla {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  padding: 0px 80px 80px 80px;
+}
