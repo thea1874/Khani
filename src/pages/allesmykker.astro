@@ -11,6 +11,8 @@ const data = await response.json();
 
 import Header from "../components/Header.astro";
 import Allesmykker from "../components/Allesmykker.astro";
+import Shelf from "../components/Shelf.astro"
+
 ---
 
 <html lang="en">
@@ -37,9 +39,12 @@ import Allesmykker from "../components/Allesmykker.astro";
   </head>
   <Header />
 
-  {
-    data.map((act) => {
-      return <Allesmykker id={act.id} IMG={act.IMG} NAME={act.NAME} KATEGORI={act.KATEGORI} FARVE={act.FARVE} PRIS={act.PRIS} />;
-    })
-  }
-</html>
+<Shelf>
+{
+data.map((act) => {
+    return <Allesmykker id={act.id} IMG={act.IMG} NAME={act.NAME} PRIS={act.PRIS}  />;
+  })
+}
+</Shelf>
+
+
