@@ -1,5 +1,20 @@
 ---
+const url = "https://voswczuqwytgtrfxmtvr.supabase.co/rest/v1/KHANI";
+
+const options = {
+  headers: {
+    apikey: "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InZvc3djenVxd3l0Z3RyZnhtdHZyIiwicm9sZSI6ImFub24iLCJpYXQiOjE2ODQzOTMzOTEsImV4cCI6MTk5OTk2OTM5MX0.csDWOEGrSLAkmRKqdmbtqsyIpfbTrBvZyRdo4ffFDnc",
+  },
+};
+const response = await fetch(url, options);
+const data = await response.json();
+
 import Header from "../components/Header.astro";
+import Shelf from "../components/Shelf.astro";
+import Allesmykker from "../components/Allesmykker.astro";
+
+
+
 ---
 
 <html lang="en">
@@ -25,7 +40,16 @@ import Header from "../components/Header.astro";
   </head>
   <Header />
   <body>
-    <h1>video her</h1>
-    <h3>Mest populære</h3>
+  
+
+    <Shelf>
+      {
+      data.map((act) => {
+          return <Allesmykker id={act.id} IMG={act.IMG} NAME={act.NAME} PRIS={act.PRIS}  />;
+        })
+      }
+      </Shelf>
   </body>
 </html>
+
+  

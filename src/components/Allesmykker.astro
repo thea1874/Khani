@@ -5,12 +5,18 @@ const { id, NAME, IMG, PRIS } = Astro.props;
 <article>
   <figure class="container1">
     <img src={`/img/${IMG}`} alt="" height="250" width="250"/>
-    <h3 class="navn">{NAME}</h3>
+    <p class="navn">{NAME}</p>
     <p class="pris">{PRIS}</p>
   </figure>
 </article>
 
 <style>
+   .container1:hover {
+    transform: scale(1.05);
+    color: var(--brand-color);
+    transition: 0.3s;
+    image-resolution: ;
+  }
 
 
 </style>
