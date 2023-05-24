@@ -1,0 +1,68 @@
+---
+const { variant = "primary", size = "medium", placement = "index" } = Astro.props;
+---
+
+<button data-variant={variant} data-size={size} data-placement={placement}>
+  <slot />
+</button>
+
+<style>
+  button:hover {
+    scale: 1.04;
+  }
+
+  /* Variants */
+  [data-variant="primary"] {
+    display: flex;
+    color: var(--surface-white);
+    border: solid var(--surface-white) 0.1rem;
+    background: none;
+  }
+
+  [data-variant="secondary"] {
+    display: flex;
+    color: var(--brand-color);
+    background-color: var(--surface-white);
+    border: solid var(--brand-color) 0.1rem;
+  }
+
+  [data-variant="tertiary"] {
+    display: flex;
+    background-color: var(--surface-beige);
+    border: solid var(--surface-black) 0.1rem;
+  }
+
+  /* Sizes */
+
+  [data-size="large"] {
+    font-size: 24px;
+    padding-block: 0.6rem;
+    padding-inline: 5rem;
+  }
+  [data-size="medium"] {
+    font-size: 22px;
+    padding-block: 0.6rem;
+    padding-inline: 4rem;
+  }
+
+  [data-size="small"] {
+    font-size: 15px;
+    padding-block: 0.6rem;
+    padding-inline: 3rem;
+  }
+
+  /* Placement */
+
+  [data-placement="index"] {
+    align-items: center;
+    margin: 0 auto;
+  }
+  [data-placement="giftidea"] {
+    align-items: left;
+  }
+
+  [data-placement="tickets"] {
+    align-items: center;
+    margin: 0 auto;
+  }
+</style>

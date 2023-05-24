@@ -1,0 +1,40 @@
+---
+import Button from "../components/Button.astro";
+---
+
+<div class="grid_1-1">
+  <div>
+    <h3>GAVEIDÈER</h3>
+    <p>Hvor finder jeg den perfekte gave til konfirmation, studentergilde eller måske mors dag? Det kan vi heldigvis hjælpe dig med lige her!</p><br />
+    <p>Du er måske ude i sidste øjeblik, og anledningen nærmer sig med hastige skridt? Bare rolig, vi har alle været der, og du er havnet det helt rigtige sted. Her har vi nemlig samlet vores bud på gaver, du kan give til de en, du holder af.</p><br />
+    <Button variant="tertiary" size="large" placement="giftidea"><a href="/allesmykker.html" style="color: var(--text-black)">SHOP GAVEIDÈER</a></Button><br />
+  </div>
+  <div>
+    <img src="img/forside/forside_gaveide.webp" alt="" />
+  </div>
+</div>
+
+<style>
+  .grid_1-1 {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(450px, 1fr));
+    background-color: var(--surface-beige);
+    padding: 50px 120px 50px 120px;
+  }
+
+  @media (max-width: 1000px) {
+    .grid_1-1 {
+      grid-template-columns: 1fr;
+      padding: 50px;
+    }
+  }
+
+  p {
+    line-height: var(--line-height-p);
+    max-width: 55ch;
+    margin-right: 20px;
+  }
+
+  h3 {
+  }
+</style>

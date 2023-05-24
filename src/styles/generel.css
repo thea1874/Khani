@@ -14,11 +14,12 @@
   /* Typografi */
   --font-size-h1: 70px;
   --font-size-h2: 35px;
-  --font-size-h3: 25px;
+  --font-size-h3: 30px;
   --font-size-p: 17px;
   --font-size-dropdown: 13px;
 
   /* Line Height */
+  --line-height-h2: 4ch;
   --line-height-h3: 2ch;
   --line-height-p: 3.5ch;
   --line-height-shop: 1.5ch;
@@ -58,7 +59,7 @@ h2 {
   font-family: "Playfair Display", serif;
   font-weight: 400;
   font-size: var(--font-size-h2);
-  margin-bottom: 70px;
+  line-height: var(--line-height-h2);
 }
 
 h3 {

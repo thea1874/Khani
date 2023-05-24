@@ -1,6 +1,9 @@
 ---
 import Header from "../components/Header.astro";
 import Footer from "../components/Footer.astro";
+import Button from "../components/Button.astro";
+import Category from "../components/Category.astro";
+import Gaveide from "../components/Gaveide.astro";
 ---
 
 <html lang="en">
@@ -9,6 +12,7 @@ import Footer from "../components/Footer.astro";
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <meta name="viewport" content="width=device-width" />
     <link rel="stylesheet" href="src/styles/generel.css" />
+    <link rel="stylesheet" href="src/styles/index.css" />
     <meta name="generator" content={Astro.generator} />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -26,8 +30,11 @@ import Footer from "../components/Footer.astro";
   </head>
   <Header />
   <body>
-    <h2>video her</h2>
-    <h3>Mest populære</h3>
+    <h2>Khani smykker</h2>
+    <h3 style="text-align: center; margin-bottom: 20px;">Find dine vandfaste smykker her</h3>
+    <Button variant="secondary" size="large" placement="index"><a href="#" style="color: var(--text-blue)">SHOP</a></Button>
+    <Category />
+    <Gaveide />
     <Footer />
   </body>
 </html>

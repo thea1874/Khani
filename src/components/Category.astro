@@ -1,0 +1,55 @@
+---
+import Button from "../components/Button.astro";
+---
+
+<div class="flex_1-1-1">
+  <div class="container">
+    <img src="img/forside/forside1.webp" alt="billede" />
+    <Button variant="primary" size="medium" placement="index"><a href="/allesmykker.html" class="btn">ØRERINGE</a></Button>
+  </div>
+  <div class="container">
+    <img src="img/forside/forside2.webp" alt="billede" />
+    <Button variant="primary" size="medium" placement="index"><a href="/allesmykker.html" class="btn">RINGE</a></Button>
+  </div>
+  <div class="container">
+    <img src="img/forside/forside3.webp" alt="billede" />
+    <Button variant="primary" size="medium" placement="index"><a href="/halskæder.html" class="btn">HALSKÆDER</a></Button>
+  </div>
+</div>
+
+<style>
+  .flex_1-1-1 {
+    display: flex;
+    flex-direction: row;
+    gap: 50px;
+    margin: 50px 120px 50px 120px;
+  }
+
+  @media (max-width: 1000px) {
+    .flex_1-1-1 {
+      flex-direction: column;
+      margin: 30px 80px 30px 80px;
+    }
+  }
+
+  .container {
+    position: relative;
+    width: 100%;
+  }
+
+  .container img {
+    width: 100%;
+    height: auto;
+  }
+  .btn {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: var(--surface-white);
+    border: solid var(--surface-white) 0.1rem;
+    background: none;
+    padding-block: 0.6rem;
+    padding-inline: 4rem;
+  }
+</style>
