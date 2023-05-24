@@ -1,17 +1,21 @@
+h2{
+  margin-top: 20px;
+  text-align: center;
+}
 form {
   text-align: center;
   padding-bottom: 70px;
 }
 
 input {
-  background-color: rgb(251, 248, 233);
+  background-color: var(--surface-beige);
   border: none;
   padding: 10px;
-  box-shadow: 2px 2px rgb(84, 191, 212);
+  
 }
 
 input[type="submit"] {
-  border: 1px solid rgb(84, 191, 212);
+  border: 1px solid var(--brand-color);
   background-color: white;
 }
 
@@ -19,13 +23,25 @@ input[type="submit"]:hover {
   background-color: rgb(84, 191, 212);
   color: white;
 }
-
+#email{
+  width:40%;
+  margin-top: 20px;
+}
 #kommentar {
-  width: 60%;
-  height: 150px;
+  width: 40%;
+  height: 100px;
   padding: 12px 20px;
   resize: none;
   margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+#navn
+{
+  width: 20%;
+}
+#telefon{
+  width: 20%;
 }
 
 @media (min-width: 700px) {
