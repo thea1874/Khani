@@ -30,7 +30,7 @@ import Header from "../components/Header.astro";
 
     <h2>HVAD ER VANDFASTE SMYKKER?</h2>
     <div class="spg">
-      <img src="img/hjaelp/spg.webp" alt="billede" />
+      <img src="img/hjaelp/asset.svg" alt="billede" />
     </div>
     <div class="grid1-1">
       <div>
@@ -68,6 +68,27 @@ import Header from "../components/Header.astro";
         </div>
       </div>
     </section>
+    <h2 class="ringe">STØRRELSESGUIDE TIL RINGE</h2>
+
+    <div class="grid1-1-1">
+      <div>
+        <img src="img/hjaelp/asset1.svg" alt="et" />
+        <h3>FIND DIN EGEN RING</h3>
+        <p>Find en ring der passer på den finger du ønsker din nye ring skal sidde på.</p>
+      </div>
+
+      <div>
+        <img src="img/hjaelp/asset2.svg" alt="to" />
+        <h3>FIND ET MÅLEBÅND</h3>
+        <p>Mål indersiden af din ring i diameter, og noter dig det præcise mål i millimeter.</p>
+      </div>
+
+      <div>
+        <img src="img/hjaelp/asset3.svg" alt="tre" />
+        <h3>SAMMENLIGN MÅL</h3>
+        <p>Sammenlign dine mål med nedenstående skema - ligger diameteren imellem to tal anbefaler vi at du runder op til nærmeste størrelse.</p>
+      </div>
+    </div>
   </body>
 
   <style>
@@ -84,7 +105,7 @@ import Header from "../components/Header.astro";
     .spg {
       max-width: 30%;
       margin: auto;
-
+      margin-left: 1000px;
       position: absolute;
     }
     .grid1-1 {
@@ -118,6 +139,15 @@ import Header from "../components/Header.astro";
         width: 90%;
         place-content: center;
       }
+    }
+
+    .ringe {
+      text-align: center;
+    }
+
+    .grid1-1-1 {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
     }
   </style>
 </html>
