@@ -72,23 +72,27 @@ import Header from "../components/Header.astro";
 
     <div class="grid1-1-1">
       <div>
-        <img src="img/hjaelp/asset1.svg" alt="et" />
+        <img class="tal" src="img/hjaelp/asset1.svg" alt="et" />
         <h3>FIND DIN EGEN RING</h3>
         <p>Find en ring der passer på den finger du ønsker din nye ring skal sidde på.</p>
       </div>
 
       <div>
-        <img src="img/hjaelp/asset2.svg" alt="to" />
+        <img class="tal" src="img/hjaelp/asset2.svg" alt="to" />
         <h3>FIND ET MÅLEBÅND</h3>
         <p>Mål indersiden af din ring i diameter, og noter dig det præcise mål i millimeter.</p>
       </div>
 
       <div>
-        <img src="img/hjaelp/asset3.svg" alt="tre" />
+        <img class="tal" src="img/hjaelp/asset3.svg" alt="tre" />
         <h3>SAMMENLIGN MÅL</h3>
         <p>Sammenlign dine mål med nedenstående skema - ligger diameteren imellem to tal anbefaler vi at du runder op til nærmeste størrelse.</p>
       </div>
     </div>
+
+    <img class="tabel" src="img/hjaelp/tabel.webp" alt="billede" />
+
+    <h2 class="ringe">STØRRELSESGUIDE TIL HALSKÆDER</h2>
   </body>
 
   <style>
@@ -143,11 +147,21 @@ import Header from "../components/Header.astro";
 
     .ringe {
       text-align: center;
+      margin-bottom: 50px;
     }
 
     .grid1-1-1 {
       display: grid;
       grid-template-columns: 1fr 1fr 1fr;
+    }
+
+    .tal {
+      max-width: 20%;
+    }
+
+    .tabel {
+      max-width: 80%;
+      margin: auto;
     }
   </style>
 </html>
