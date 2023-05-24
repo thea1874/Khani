@@ -5,6 +5,7 @@
   --surface-beige: #f4f0e4;
   --surface-white: #ffffff;
   --surface-dropdown: #fafafa;
+  --surface-black: #000000;
 
   --text-black: #000000;
   --text-blue: #7cc9e7;
@@ -16,6 +17,11 @@
   --font-size-h3: 25px;
   --font-size-p: 17px;
   --font-size-dropdown: 13px;
+
+  /* Line Height */
+  --line-height-h3: 2ch;
+  --line-height-p: 3.5ch;
+  --line-height-shop: 1.5ch;
 }
 
 * {
@@ -37,7 +43,6 @@ html {
 
 body {
   height: 100%;
-  line-height: 3.5ch;
 }
 
 /* Font */
