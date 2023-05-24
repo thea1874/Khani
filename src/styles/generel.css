@@ -19,8 +19,9 @@
   --font-size-dropdown: 13px;
 
   /* Line Height */
-  --line-height-h3: 1ch;
+  --line-height-h3: 2ch;
   --line-height-p: 3.5ch;
+  --line-height-shop: 1.5ch;
 }
 
 * {
@@ -69,5 +70,4 @@ p {
   font-family: "Open Sans", sans-serif;
   font-weight: 400;
   font-size: var(--font-size-p);
-  line-height: var(--line-height-p);
 }
