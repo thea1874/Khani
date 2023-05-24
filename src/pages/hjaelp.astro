@@ -28,12 +28,96 @@ import Header from "../components/Header.astro";
   <body>
     <Displaybillede baggrund="img/hjaelp/hjaelp.webp" text="VIGTIG VIDEN" />
 
-    <h1>HVAD ER VANDFASTE SMYKKER?</h1>
-
-    <div class="grid_hjaelp">
-      <p class="vandfast">At smykkerne er vandfaste betyder at du kan bære dem i vand uden nogle bekymringer. Det gælder altså både om du er i bad, en tur på stranden, eller oppe og træne i dit lokale fitnesscenter. Vores smykker holder altså farven og du vil ikke opleve at din hud bliver misfarvet eller at farven på smykket forsvinder. Grunden til at de kan holde til det hele er at de er fremstillet i rustfrit stål af kirurgisk kvalitet. Det rustfrie stål udgør basen af smykket, der herefter bliver belagt med 14K guld.</p>
-
-      <p class="">Guldet påføres smykket under et elektrolytisk bad, der kemisk binder guldet direkte til stålet. Modsat traditionelle forgyldninger af sølvsmykker, er vores forgyldning påført at væsentligt stærkere metal - et matal der både er allergivenligt og fri for nikkel, og som besidder væsentligt mere råstyrke (en hårdhed der er mere end 3x gange så stor som sølv). Derfor udgør stålet de perfekte forhold, der er med til at guldet binder sig enormt stærkt til metallet - det er det rustfrie ståls råstyke og gode egenskaber som er med til at give vores smykker deres enormt lange levetid.</p>
+    <h2>HVAD ER VANDFASTE SMYKKER?</h2>
+    <div class="spg">
+      <img src="img/hjaelp/spg.webp" alt="billede" />
     </div>
+    <div class="grid1-1">
+      <div>
+        <p>
+          At smykkerne er vandfaste betyder at du kan bære dem i vand uden nogle bekymringer. Det gælder altså både om du er i bad, en tur på stranden, eller oppe og træne i dit lokale fitnesscenter. Vores smykker holder altså farven og du vil ikke
+          opleve at din hud bliver misfarvet eller at farven på smykket forsvinder. Grunden til at de kan holde til det hele er at de er fremstillet i rustfrit stål af kirurgisk kvalitet. Det rustfrie stål udgør basen af smykket, der herefter bliver
+          belagt med 14K guld.
+        </p>
+      </div>
+      <div>
+        <p>
+          Guldet påføres smykket under et elektrolytisk bad, der kemisk binder guldet direkte til stålet. Modsat traditionelle forgyldninger af sølvsmykker, er vores forgyldning påført at væsentligt stærkere metal - et matal der både er
+          allergivenligt og fri for nikkel, og som besidder væsentligt mere råstyrke (en hårdhed der er mere end 3x gange så stor som sølv). Derfor udgør stålet de perfekte forhold, der er med til at guldet binder sig enormt stærkt til metallet - det
+          er det rustfrie ståls råstyke og gode egenskaber som er med til at give vores smykker deres enormt lange levetid.
+        </p>
+      </div>
+    </div>
+
+    <section>
+      <div class="hjaelpgrid">
+        <div class="hjaelpimg">
+          <img src="img/hjaelp/hjaelp2.webp" alt="billede" />
+        </div>
+
+        <div class="hjaelpimg">
+          <img src="img/hjaelp/hjaelp3.webp" alt="billede" />
+        </div>
+
+        <div class="hjaelpimg">
+          <img src="img/hjaelp/hjaelp4.webp" alt="billede" />
+        </div>
+
+        <div class="hjaelpimg">
+          <img src="img/hjaelp/hjaelp5.webp" alt="billede" />
+        </div>
+      </div>
+    </section>
   </body>
+
+  <style>
+    img {
+      width: 100%;
+      height: auto;
+      display: block;
+    }
+    h2 {
+      margin-left: 100px;
+      margin-top: 100px;
+    }
+
+    .spg {
+      max-width: 30%;
+      margin: auto;
+
+      position: absolute;
+    }
+    .grid1-1 {
+      margin: 50px 50px 50px 50px;
+    }
+
+    p {
+      margin: 20px 50px 20px 0px;
+      line-height: 3.5ch;
+    }
+
+    @media (min-width: 750px) {
+      .grid1-1 {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        margin: 120px 100px 120px 100px;
+      }
+      p {
+        margin: 50px 50px 90px 0px;
+        line-height: 3.5ch;
+      }
+    }
+
+    @media (min-width: 700px) {
+      .hjaelpgrid {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        gap: 30px;
+        margin: auto;
+        margin-block: 60px;
+        width: 90%;
+        place-content: center;
+      }
+    }
+  </style>
 </html>
