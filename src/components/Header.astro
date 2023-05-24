@@ -1,5 +1,5 @@
 <header>
-  <div class="hide">
+  <div>
     <a href="/index.html"><img class="logo" src="/img/Logo.svg" alt="billede" /></a>
   </div>
   <nav class="hide">
@@ -14,13 +14,20 @@
           <a href="">Øreringe</a>
           <a href="">Ankelkæder</a>
         </div>
+     <div>
       </li>
       <li><a href="/hjaelp">HJÆLP</a></li>
       <li><a href="/kontakt">KONTAKT</a></li>
       <li><a href="/omos">OM OS</a></li>
-    </ul>
+      </div>
+      </ul>
   </nav>
+   <div class="icon">
+        <i class='fas fa-search' style='font-size:24px;color:#7cc9e7'></i>
+        <i class='fas fa-shopping-cart' style='font-size:24px;color:#7cc9e7'></i>
+    </div>
 </header>
+<script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
 
 <style>
   @media screen and (max-width: 1000px) {
@@ -33,24 +40,22 @@
     justify-content: space-between;
     display: flex;
     gap: 1rem;
-    padding: 8px 257px 8px 190px;
+    padding: 30px 100px 30px 70px;
     align-items: center;
-    margin-bottom: -20px;
     white-space: nowrap;
   }
 
-  @media (max-width: 1300px) {
-    .logo {
-      margin-left: -80px;
-      margin-right: 30px;
-    }
-  }
-
   .logo {
-    width: 6.2rem;
+    max-width: 350px;
     display: flex;
     align-content: center;
-    height: 5.1rem;
+    height: 5rem;
+    order: 3;
+  }
+
+  .icon {
+    display: flex;
+    gap: 0.7rem;
   }
 
   nav ul a {
