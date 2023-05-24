@@ -9,6 +9,7 @@ import Header from "../components/Header.astro";
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <meta name="viewport" content="width=device-width" />
     <link rel="stylesheet" href="src/styles/generel.css" />
+    <link rel="stylesheet" href="src/styles/hjaelp.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500&display=swap" rel="stylesheet" />
@@ -68,7 +69,7 @@ import Header from "../components/Header.astro";
         </div>
       </div>
     </section>
-    <h2 class="ringe">STØRRELSESGUIDE TIL RINGE</h2>
+    <h2 class="ringe_guide">STØRRELSESGUIDE TIL RINGE</h2>
 
     <div class="grid1-1-1">
       <div>
@@ -92,76 +93,49 @@ import Header from "../components/Header.astro";
 
     <img class="tabel" src="img/hjaelp/tabel.webp" alt="billede" />
 
-    <h2 class="ringe">STØRRELSESGUIDE TIL HALSKÆDER</h2>
+    <div class="baggrund">
+      <h2 class="halskaede_guide">STØRRELSESGUIDE TIL HALSKÆDER</h2>
+      <div class="halskaedeguide">
+        <img class="billedeguide" src="img/hjaelp/halskaedeguide.webp" alt="halskaedeguide" />
+        <p>Er du i tvivl om hvilken længde du skal købe din halskæde i, så kan du finde svaret her. Billedet til venstre hjælper dig nemlig med visuelt at se hvor lange de forskellige halskæder er .</p>
+      </div>
+    </div>
+
+    <section>
+      <div class="rla">
+        <div>
+          <h2>RETURNERING</h2>
+          <p>
+            <strong>Fortrydelsesret</strong> Har tingene ændret sig, og er du måske blevet i tvivl om dit køb? Det er i orden at ændre mening, og såfremt varen stadig er i den originale stand du modtog den i, accepterer vi returneringer. Vi har 14 dages
+            fuld returret - gældende fra dagen du modtager din ordre. Eventuelle returneringsomkostninger der måtte forekomme ved returneringen afholder du selv, hvorfor valget af transportør også er dit eget. Din fortrydelse skal indgives til os senest
+            14 dage efter dit køb. Ligeledes skal din ordre tilbageleveres til os senest 14 dage efter at du har meddelt at ville gøre brug af din fortrydelsesret.
+          </p>
+          <p>
+            <strong>Hvordan gør jeg?</strong> Hvis du vil gøre brug af fortrydelsesretten, skal dette meddeles tydeligt pr. mail til khanismykker@gmail.com - Herefter vil du blive bedt om at sende din ordre retur til følgende adresse; Vangede Bygade 41,
+            2. tv, 2820 Gentofte Ved modtagelse vil det være op til KHANI Smykker at vurdere standen på varen. Er varen prøvet udover, hvad der betegens som nødvendigt for at fastslå varens art og egenskaber, kan den betragtes som brugt, og værende af
+            forringet værdi. I så fald kan du risikere at modtage en mindre del af det oprindelige købsbeløb retur. For din og vores egen skyld, bedes du sørge for et bevis på returforsendelsen (ordrebekræftelse eller lign.) - du har nemlig ansvaret for
+            pakken indtil dens ankomst. Alle varer bedes returneret i deres originale emballage (om muligt), og i forsvarlig og sikker indpakning. Er du i tvivl om noget, eller har spørgsmål til processen bedes du henrette disse til khanismykker@gmail.com
+            - så hjælper vi dig, tak!
+          </p>
+        </div>
+        <div>
+          <h2>LEVERING</h2>
+          <p>
+            KHANI Smykker tilstræber at afsende alle ordre indgået inden kl. 18 samme dag, ordre indgået herefter, sendes næstfølgende hverdag. Vi sender til hele Danmark, og vores fragtpriser starter fra 19 kr. Smykker bestilt med levering af DAO,
+            Bring og GLS vil blive leveret til nærmeste pakkeshop til adressen angivet ved bestillingen. Vælger du brevfragt med PostNord bliver smykkerne leveret til modtagerens postkasse.
+          </p>
+          <p>
+            Vi leverer ikke til udlandet eller til Færøerne og Grønland - kun ved særskilt aftale. OBS: Hvis der ikke er plads på udleveringsstedet bliver pakken flyttet til nærmeste udleveringssted - i tilfælde af dette, vil du blive informeret
+            herom.
+          </p>
+          <p>
+            Der leveres varer alle ugens hverdage. Dine smykker bliver leveret 1-7 hverdage efter bestillingen, afhængig af den valgte leveringsform. For visse varer gælder særlige leveringsvilkår. Betingelserne vil fremgå specifikt forud for køb af
+            disse varer. Opstår der problemer, bedes du kontakte os hurtigst muligt - så vi kan løse udfordringen.
+          </p>
+        </div>
+      </div>
+    </section>
   </body>
 
-  <style>
-    img {
-      width: 100%;
-      height: auto;
-      display: block;
-    }
-    h2 {
-      margin-left: 100px;
-      margin-top: 100px;
-    }
-
-    .spg {
-      max-width: 30%;
-      margin: auto;
-      margin-left: 1000px;
-      position: absolute;
-    }
-    .grid1-1 {
-      margin: 50px 50px 50px 50px;
-    }
-
-    p {
-      margin: 20px 50px 20px 0px;
-      line-height: 3.5ch;
-    }
-
-    @media (min-width: 750px) {
-      .grid1-1 {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        margin: 120px 100px 120px 100px;
-      }
-      p {
-        margin: 50px 50px 90px 0px;
-        line-height: 3.5ch;
-      }
-    }
-
-    @media (min-width: 700px) {
-      .hjaelpgrid {
-        display: grid;
-        grid-template-columns: 1fr 1fr 1fr 1fr;
-        gap: 30px;
-        margin: auto;
-        margin-block: 60px;
-        width: 90%;
-        place-content: center;
-      }
-    }
-
-    .ringe {
-      text-align: center;
-      margin-bottom: 50px;
-    }
-
-    .grid1-1-1 {
-      display: grid;
-      grid-template-columns: 1fr 1fr 1fr;
-    }
-
-    .tal {
-      max-width: 20%;
-    }
-
-    .tabel {
-      max-width: 80%;
-      margin: auto;
-    }
-  </style>
+  <style></style>
 </html>
