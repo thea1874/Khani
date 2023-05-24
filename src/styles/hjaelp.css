@@ -93,5 +93,5 @@ p {
 .rla {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  padding: 80px;
+  padding: 0px 80px 80px 80px;
 }
