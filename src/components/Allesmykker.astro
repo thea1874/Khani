@@ -1,18 +1,16 @@
 ---
-const { id, NAME, KATEGORI, FARVE, IMG, PRIS } = Astro.props;
+const { id, NAME, IMG, PRIS } = Astro.props;
 ---
 
 <article>
   <figure class="container1">
-    <p class="farve">{FARVE}</p>
     <img src={`/img/${IMG}`} alt="" height="250" width="250"/>
-    <div class="navn">{NAME}</div>
-    <p class="kategori">{KATEGORI}</p>
+    <h3 class="navn">{NAME}</h3>
     <p class="pris">{PRIS}</p>
   </figure>
 </article>
 
 <style>
 
-    
+
 </style>
