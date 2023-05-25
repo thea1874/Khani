@@ -25,20 +25,21 @@ input[type="submit"]:hover {
 }
 #email{
   width:40%;
-  margin-top: 20px;
+  margin-top: 15px;
 }
 #kommentar {
   width: 40%;
   height: 100px;
   padding: 12px 20px;
   resize: none;
-  margin-top: 20px;
+  margin-top: 15px;
   margin-bottom: 20px;
 }
 
 #navn
 {
-  width: 20%;
+  width: 19%;
+  margin-right: 10px;
 }
 #telefon{
   width: 20%;
