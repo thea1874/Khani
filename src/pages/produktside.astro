@@ -9,49 +9,45 @@ import Button from "../components/Button.astro";
     <meta charset="utf-8" />
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <meta name="viewport" content="width=device-width" />
-    <meta name="generator" content={Astro.generator} />
-    <link rel="stylesheet" href="/styles/generel.css" />
+  </head>v
+  <link rel="stylesheet" href="/styles/generel.css" />
 
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=Hubballi&display=swap" rel="stylesheet" />
-    <title>Astro</title>
-  </head>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Hubballi&display=swap" rel="stylesheet" />
+  <title>Astro</title>
+
   <Header />
   <body>
     <div class="grid_1-1">
-<<<<<<< HEAD
-    <div class="billede">
-    <img src="/img/MEDUSA.webp" alt="Billede">
-    </div>
-    <div>
-    <h2>MEDUSA</h2>
-    <h3>SØLV HALSKÆDE</h3>
-    <h3>139,-</h3>
-    <h2>Farve</h2>
-    <input type="text" id="farve" placeholder="SØLV">
-    <h2>Antal</h2>
-    <input type="text" id="antal" placeholder="1">
-    <Button variant="tertiary" size="small" placement="index"><a href="#" style="color: var(--text-blue)">SHOP</a></Button>
-</div>
-    <div class="grid_2-2">
-        <img class="billede3"
-        src="/img/XENA.webp" alt="billede">
-        <img class="billede4" src="/img/forside/forside2.webp" alt="billede">
+      <div class="billede">
+        <img src="/img/MEDUSA.webp" alt="Billede" />
+      </div>
+      <div>
+        <h2>MEDUSA</h2>
+        <h3>SØLV HALSKÆDE</h3>
+        <h3>139,-</h3>
+        <h2>Farve</h2>
+        <input type="text" id="farve" placeholder="SØLV" />
+        <h2>Antal</h2>
+        <input type="text" id="antal" placeholder="1" />
+        <Button variant="tertiary" size="small" placement="index"><a href="#" style="color: var(--text-blue)">SHOP</a></Button>
+      </div>
+      <div class="grid_2-2">
+        <img class="billede3" src="/img/XENA.webp" alt="billede" />
+        <img class="billede4" src="/img/forside/forside2.webp" alt="billede" />
 
-
-    <ul>
-        <li><p>Udført i rustfrit stål af kirurgisk kvalitet.</p></li>
-        <li><p>Guldbelagt i en kvalitet på hele 14K (karat).</p></li>
-        <li><p>Vandfast - tåler havet, poolen og bruseren.</p></li>
-        <li><p>Ingen grønne misfarvninger på huden</p></li>
-        <li><p>Rustfrie og allergivenlige smykker</p></li>
-      </ul>
-    </div>
-=======
+        <ul>
+          <li><p>Udført i rustfrit stål af kirurgisk kvalitet.</p></li>
+          <li><p>Guldbelagt i en kvalitet på hele 14K (karat).</p></li>
+          <li><p>Vandfast - tåler havet, poolen og bruseren.</p></li>
+          <li><p>Ingen grønne misfarvninger på huden</p></li>
+          <li><p>Rustfrie og allergivenlige smykker</p></li>
+        </ul>
+      </div>
       <div class="billede">
         <img src="/img/MEDUSA.webp" alt="Billede" />
       </div>
@@ -69,75 +65,60 @@ import Button from "../components/Button.astro";
         <img class="billede4" src="/img/forside/forside2.webp" alt="billede" />
         <div></div>
       </div>
->>>>>>> 6c0b565c09cc0acb52b5551199d5c68431e814a9
     </div>
-</div>
-
-
-    <Footer />
   </body>
 
+  <Footer />
+
   <style>
-<<<<<<< HEAD
-
-
-input {
+    input {
       background-color: var(--surface-beige);
       border: none;
       padding: 10px;
     }
- .grid_1-1 {
-    margin: 20px 20px 20px 20px;
-    grid-template-columns: auto auto;
-  }
-  .grid_2-2 {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-
-  }
-
-  .billede3{
-    max-width: 100px;
-  }
-  .billede4{
-    max-width: 100px;
-  }
-
-
-  @media (min-width: 500px) {
-=======
->>>>>>> 6c0b565c09cc0acb52b5551199d5c68431e814a9
     .grid_1-1 {
       margin: 20px 20px 20px 20px;
       grid-template-columns: auto auto;
     }
     .grid_2-2 {
-      margin: ;
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+    }
+
+    .billede3 {
+      max-width: 100px;
+    }
+    .billede4 {
+      max-width: 100px;
     }
 
     @media (min-width: 500px) {
       .grid_1-1 {
-        display: grid;
-        grid-template-columns: repeat(auto-fill, minmax(500px, 1fr));
-        margin: 30px 100px 100px 100px;
+        margin: 20px 20px 20px 20px;
+        grid-template-columns: auto auto;
+      }
+      .grid_2-2 {
+        margin: ;
+      }
+
+      @media (min-width: 500px) {
+        .grid_1-1 {
+          display: grid;
+          grid-template-columns: repeat(auto-fill, minmax(500px, 1fr));
+          margin: 30px 100px 100px 100px;
+        }
+        .billede {
+          margin-right: 30px;
+        }
       }
       .billede {
         margin-right: 30px;
       }
     }
-<<<<<<< HEAD
-.billede{
-    margin-right: 30px;
 
-}
-  }
-
-  .grid_3-1{
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-  }
-  </style>
-=======
+    .grid_3-1 {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
   </style>
 </html>
->>>>>>> 6c0b565c09cc0acb52b5551199d5c68431e814a9
