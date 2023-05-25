@@ -1,6 +1,7 @@
 ---
 import Header from "../components/Header.astro";
 import Footer from "../components/Footer.astro";
+import Button from "../components/Button.astro";
 ---
 
 <html lang="en">
@@ -22,6 +23,35 @@ import Footer from "../components/Footer.astro";
   <Header />
   <body>
     <div class="grid_1-1">
+<<<<<<< HEAD
+    <div class="billede">
+    <img src="/img/MEDUSA.webp" alt="Billede">
+    </div>
+    <div>
+    <h2>MEDUSA</h2>
+    <h3>SØLV HALSKÆDE</h3>
+    <h3>139,-</h3>
+    <h2>Farve</h2>
+    <input type="text" id="farve" placeholder="SØLV">
+    <h2>Antal</h2>
+    <input type="text" id="antal" placeholder="1">
+    <Button variant="tertiary" size="small" placement="index"><a href="#" style="color: var(--text-blue)">SHOP</a></Button>
+</div>
+    <div class="grid_2-2">
+        <img class="billede3"
+        src="/img/XENA.webp" alt="billede">
+        <img class="billede4" src="/img/forside/forside2.webp" alt="billede">
+
+
+    <ul>
+        <li><p>Udført i rustfrit stål af kirurgisk kvalitet.</p></li>
+        <li><p>Guldbelagt i en kvalitet på hele 14K (karat).</p></li>
+        <li><p>Vandfast - tåler havet, poolen og bruseren.</p></li>
+        <li><p>Ingen grønne misfarvninger på huden</p></li>
+        <li><p>Rustfrie og allergivenlige smykker</p></li>
+      </ul>
+    </div>
+=======
       <div class="billede">
         <img src="/img/MEDUSA.webp" alt="Billede" />
       </div>
@@ -39,12 +69,44 @@ import Footer from "../components/Footer.astro";
         <img class="billede4" src="/img/forside/forside2.webp" alt="billede" />
         <div></div>
       </div>
+>>>>>>> 6c0b565c09cc0acb52b5551199d5c68431e814a9
     </div>
+</div>
+
 
     <Footer />
   </body>
 
   <style>
+<<<<<<< HEAD
+
+
+input {
+      background-color: var(--surface-beige);
+      border: none;
+      padding: 10px;
+    }
+ .grid_1-1 {
+    margin: 20px 20px 20px 20px;
+    grid-template-columns: auto auto;
+  }
+  .grid_2-2 {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+
+  }
+
+  .billede3{
+    max-width: 100px;
+  }
+  .billede4{
+    max-width: 100px;
+  }
+
+
+  @media (min-width: 500px) {
+=======
+>>>>>>> 6c0b565c09cc0acb52b5551199d5c68431e814a9
     .grid_1-1 {
       margin: 20px 20px 20px 20px;
       grid-template-columns: auto auto;
@@ -63,5 +125,19 @@ import Footer from "../components/Footer.astro";
         margin-right: 30px;
       }
     }
+<<<<<<< HEAD
+.billede{
+    margin-right: 30px;
+
+}
+  }
+
+  .grid_3-1{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
+  </style>
+=======
   </style>
 </html>
+>>>>>>> 6c0b565c09cc0acb52b5551199d5c68431e814a9
