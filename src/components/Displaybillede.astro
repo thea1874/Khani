@@ -3,25 +3,20 @@ const { baggrund, text } = Astro.props;
 ---
 
 <div class="container">
-  <img class="billede" src={baggrund} alt="" />
+  <img src={baggrund} alt="" />
   <h1 class="text-center">{text}</h1>
 </div>
 
 <style>
   .container {
-    position: relative;
     text-align: center;
+    position: relative;
   }
   .text-center {
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-  }
-
-  .billede {
-    width: 100%;
-    display: block;
   }
 
   h1 {
