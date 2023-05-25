@@ -1,6 +1,7 @@
 ---
 import Header from "../components/Header.astro";
 import Footer from "../components/Footer.astro";
+import Button from "../components/Button.astro";
 ---
 
 <html lang="en">
@@ -37,37 +38,58 @@ import Footer from "../components/Footer.astro";
     <h3>SØLV HALSKÆDE</h3>
     <h3>139,-</h3>
     <h2>Farve</h2>
-    <input type="text">
+    <input type="text" id="farve" placeholder="SØLV">
     <h2>Antal</h2>
-    <input type="text">
+    <input type="text" id="antal" placeholder="1">
+    <Button variant="tertiary" size="small" placement="index"><a href="#" style="color: var(--text-blue)">SHOP</a></Button>
 </div>
     <div class="grid_2-2">
         <img class="billede3"
         src="/img/XENA.webp" alt="billede">
         <img class="billede4" src="/img/forside/forside2.webp" alt="billede">
-        <div>
-            
-        </div>
+
+
+    <ul>
+        <li><p>Udført i rustfrit stål af kirurgisk kvalitet.</p></li>
+        <li><p>Guldbelagt i en kvalitet på hele 14K (karat).</p></li>
+        <li><p>Vandfast - tåler havet, poolen og bruseren.</p></li>
+        <li><p>Ingen grønne misfarvninger på huden</p></li>
+        <li><p>Rustfrie og allergivenlige smykker</p></li>
+      </ul>
     </div>
-
-
-
-
     </div>
+</div>
+
 
 
     <Footer />
   </body>
 
   <style>
+
+
+input {
+      background-color: var(--surface-beige);
+      border: none;
+      padding: 10px;
+    }
  .grid_1-1 {
     margin: 20px 20px 20px 20px;
     grid-template-columns: auto auto;
   }
   .grid_2-2 {
-    margin: ;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
 
   }
+
+  .billede3{
+    max-width: 100px;
+  }
+  .billede4{
+    max-width: 100px;
+  }
+
 
   @media (min-width: 500px) {
     .grid_1-1 {
@@ -77,6 +99,12 @@ import Footer from "../components/Footer.astro";
     }
 .billede{
     margin-right: 30px;
+
 }
+  }
+
+  .grid_3-1{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
   }
   </style>
