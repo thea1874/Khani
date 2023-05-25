@@ -12,16 +12,23 @@
   --text-white: #ffffff;
 
   /* Typografi */
-  --font-size-h1: 70px;
-  --font-size-h2: 35px;
+  --font-size-h1: 40px;
+  --font-size-h2: 30px;
   --font-size-h3: 30px;
   --font-size-p: 14px;
   --font-size-dropdown: 13px;
   --font-size-footer: 13px;
 
+  /* Font-weight */
+  --font-weight-700: 700;
+  --font-weight-600: 600;
+  --font-weight-500: 500;
+  --font-weight-400: 400;
+
   /* Line Height */
-  --line-height-h2: 4ch;
-  --line-height-h3: 2ch;
+  --line-height-h1: 3.5ch;
+  --line-height-h2: 3ch;
+  --line-height-h3: 2.5ch;
   --line-height-p: 3.5ch;
   --line-height-shop: 1.5ch;
 }
@@ -51,26 +58,30 @@ body {
 
 h1 {
   font-family: "Montserrat", sans-serif;
-  font-weight: 500;
-  color: var(--text-header);
   font-size: var(--font-size-h1);
+  font-weight: var(--font-weight-600);
+  text-transform: uppercase;
+  line-height: var(--line-height-h1);
+  text-align: center;
+  color: var(--text-blue);
 }
 
 h2 {
-  font-family: "Montserrat", sans-serif;
-  font-weight: 400;
+  font-family: "Hubballi", cursive;
+  font-weight: var(--font-weight-500);
   font-size: var(--font-size-h2);
   line-height: var(--line-height-h2);
+  text-transform: uppercase;
 }
 
 h3 {
   font-family: "Hubballi", cursive;
-  font-weight: 400;
+  font-weight: var(--font-weight-400);
   font-size: var(--font-size-h3);
 }
 
 p {
   font-family: "Montserrat", sans-serif;
-  font-weight: 400;
+  font-weight: var(--font-weight-400);
   font-size: var(--font-size-p);
 }

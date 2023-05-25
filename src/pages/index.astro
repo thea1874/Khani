@@ -15,45 +15,34 @@ import Gaveide from "../components/Gaveide.astro";
     <meta name="generator" content={Astro.generator} />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500&display=swap" rel="stylesheet" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Hubballi&display=swap" rel="stylesheet" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet" />
     <title>Astro</title>
   </head>
   <Header />
   <body>
-    <h2>Khani smykker 2</h2>
-    <h3 style="text-align: center; margin-bottom: 20px;">Find dine vandfaste smykker her</h3>
-    <Button variant="secondary" size="large" placement="index"><a href="#" style="color: var(--text-blue)">SHOP</a></Button>
+    <div class="margin">
+      <h1>Khani smykker</h1>
+      <h2 style="text-align: center; margin-bottom: 30px;">Find dine vandfaste smykker her</h2>
+      <Button variant="secondary" size="large" placement="index"><a href="#" style="color: var(--text-blue)">SHOP</a></Button>
+    </div>
     <Category />
     <Gaveide />
     <Footer />
   </body>
 
   <style>
-    h2 {
-      color: var(--text-blue);
-      text-align: center;
-      text-transform: uppercase;
-    }
-
-    h3 {
-      text-transform: uppercase;
-      margin-bottom: 10px;
-    }
-
     a {
       list-style-type: none;
       text-decoration: none;
       color: var(--text-white);
       font-family: "Hubballi", cursive;
+    }
+
+    .margin {
+      margin: 0px 0px 30px 0px;
     }
   </style>
 </html>
