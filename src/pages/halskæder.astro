@@ -12,9 +12,6 @@ const data = await response.json();
 import Header from "../components/Header.astro";
 import Shelf from "../components/Shelf.astro";
 import Allesmykker from "../components/Allesmykker.astro";
-
-
-
 ---
 
 <html lang="en">
@@ -26,30 +23,20 @@ import Allesmykker from "../components/Allesmykker.astro";
     <link rel="stylesheet" href="/styles/generel.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500&display=swap" rel="stylesheet" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Hubballi&display=swap" rel="stylesheet" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet" />
     <title>Astro</title>
   </head>
   <Header />
   <body>
-  
-
     <Shelf>
       {
-      data.map((act) => {
-          return <Allesmykker id={act.id} IMG={act.IMG} NAME={act.NAME} PRIS={act.PRIS}  />;
+        data.map((act) => {
+          return <Allesmykker id={act.id} IMG={act.IMG} NAME={act.NAME} PRIS={act.PRIS} />;
         })
       }
-      </Shelf>
+    </Shelf>
   </body>
 </html>
-
-  

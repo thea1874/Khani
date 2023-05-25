@@ -10,73 +10,58 @@ import Footer from "../components/Footer.astro";
     <meta name="viewport" content="width=device-width" />
     <meta name="generator" content={Astro.generator} />
     <link rel="stylesheet" href="/styles/generel.css" />
-  
+
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500&display=swap" rel="stylesheet" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Hubballi&display=swap" rel="stylesheet" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet" />
     <title>Astro</title>
   </head>
   <Header />
   <body>
-
     <div class="grid_1-1">
-    <div class="billede">
-    <img src="/img/MEDUSA.webp" alt="Billede">
+      <div class="billede">
+        <img src="/img/MEDUSA.webp" alt="Billede" />
+      </div>
+      <div>
+        <h2>MEDUSA</h2>
+        <h3>SØLV HALSKÆDE</h3>
+        <h3>139,-</h3>
+        <h2>Farve</h2>
+        <input type="text" />
+        <h2>Antal</h2>
+        <input type="text" />
+      </div>
+      <div class="grid_2-2">
+        <img class="billede3" src="/img/XENA.webp" alt="billede" />
+        <img class="billede4" src="/img/forside/forside2.webp" alt="billede" />
+        <div></div>
+      </div>
     </div>
-    <div>
-    <h2>MEDUSA</h2>
-    <h3>SØLV HALSKÆDE</h3>
-    <h3>139,-</h3>
-    <h2>Farve</h2>
-    <input type="text">
-    <h2>Antal</h2>
-    <input type="text">
-</div>
-    <div class="grid_2-2">
-        <img class="billede3"
-        src="/img/XENA.webp" alt="billede">
-        <img class="billede4" src="/img/forside/forside2.webp" alt="billede">
-        <div>
-            
-        </div>
-    </div>
-
-
-
-
-    </div>
-
 
     <Footer />
   </body>
 
   <style>
- .grid_1-1 {
-    margin: 20px 20px 20px 20px;
-    grid-template-columns: auto auto;
-  }
-  .grid_2-2 {
-    margin: ;
-
-  }
-
-  @media (min-width: 500px) {
     .grid_1-1 {
-      display: grid;
-      grid-template-columns: repeat(auto-fill, minmax(500px, 1fr));
-      margin: 30px 100px 100px 100px;
+      margin: 20px 20px 20px 20px;
+      grid-template-columns: auto auto;
     }
-.billede{
-    margin-right: 30px;
-}
-  }
+    .grid_2-2 {
+      margin: ;
+    }
+
+    @media (min-width: 500px) {
+      .grid_1-1 {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(500px, 1fr));
+        margin: 30px 100px 100px 100px;
+      }
+      .billede {
+        margin-right: 30px;
+      }
+    }
   </style>
+</html>
