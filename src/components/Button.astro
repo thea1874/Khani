@@ -35,17 +35,20 @@ const { variant = "primary", size = "medium", placement = "index" } = Astro.prop
   /* Sizes */
 
   [data-size="large"] {
+    font-family: "Hubballi", cursive;
     font-size: 24px;
-    padding-block: 0.6rem;
-    padding-inline: 5rem;
-  }
-  [data-size="medium"] {
-    font-size: 22px;
     padding-block: 0.6rem;
     padding-inline: 4rem;
   }
+  [data-size="medium"] {
+    font-family: "Hubballi", cursive;
+    font-size: 22px;
+    padding-block: 0.6rem;
+    padding-inline: 3rem;
+  }
 
   [data-size="small"] {
+    font-family: "Hubballi", cursive;
     font-size: 15px;
     padding-block: 0.6rem;
     padding-inline: 3rem;
@@ -59,10 +62,5 @@ const { variant = "primary", size = "medium", placement = "index" } = Astro.prop
   }
   [data-placement="giftidea"] {
     align-items: left;
-  }
-
-  [data-placement="tickets"] {
-    align-items: center;
-    margin: 0 auto;
   }
 </style>

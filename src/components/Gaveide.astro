@@ -6,26 +6,61 @@ import Button from "../components/Button.astro";
   <div>
     <h3>GAVEIDÈER</h3>
     <p>Hvor finder jeg den perfekte gave til konfirmation, studentergilde eller måske mors dag? Det kan vi heldigvis hjælpe dig med lige her!</p><br />
-    <p>Du er måske ude i sidste øjeblik, og anledningen nærmer sig med hastige skridt? Bare rolig, vi har alle været der, og du er havnet det helt rigtige sted. Her har vi nemlig samlet vores bud på gaver, du kan give til de en, du holder af.</p><br />
-    <Button variant="tertiary" size="large" placement="giftidea"><a href="/allesmykker.html" style="color: var(--text-black)">SHOP GAVEIDÈER</a></Button><br />
+    <p style="margin-bottom: 30px;">Du er måske ude i sidste øjeblik, og anledningen nærmer sig med hastige skridt? Bare rolig, vi har alle været der, og du er havnet det helt rigtige sted. Her har vi nemlig samlet vores bud på gaver, du kan give til de en, du holder af.</p><br />
+    <Button variant="tertiary" size="medium" placement="giftidea"><a href="/allesmykker.html" class="btn">SHOP GAVEIDÈER</a></Button><br />
   </div>
-  <div>
+  <div class="order">
     <img src="img/forside/forside_gaveide.webp" alt="" />
   </div>
 </div>
 
 <style>
-  .grid_1-1 {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(450px, 1fr));
-    background-color: var(--surface-beige);
-    padding: 50px 120px 50px 120px;
+  @media (min-width: 1000px) {
+    .grid_1-1 {
+      display: grid;
+      grid-template-columns: auto auto;
+      background-color: var(--surface-beige);
+      padding: 70px 140px 70px 140px;
+      column-gap: 20px;
+    }
+
+    p {
+      max-width: 60ch;
+    }
+
+    img {
+      height: 100%;
+      width: 100%;
+      object-fit: cover;
+      box-sizing: border-box;
+    }
   }
 
   @media (max-width: 1000px) {
     .grid_1-1 {
-      grid-template-columns: 1fr;
-      padding: 50px;
+      display: grid;
+      background-color: var(--surface-beige);
+      padding: 35px 70px 50px 70px;
+      row-gap: 20px;
+    }
+
+    .order {
+      order: -1;
+    }
+
+    img {
+      margin-top: 35px;
+    }
+
+    body {
+      text-align: center;
+    }
+
+    .btn {
+      text-align: center;
+      justify-content: center;
+      align-items: center;
+      margin: 0 auto;
     }
   }
 
@@ -33,11 +68,13 @@ import Button from "../components/Button.astro";
     font-family: "Open Sans", sans-serif;
     font-weight: 400;
     line-height: var(--line-height-p);
-    max-width: 55ch;
-    margin-right: 20px;
   }
 
   h3 {
-    margin-top: 20px;
+    margin: 30px 0px 30px 0px;
+  }
+
+  .btn {
+    color: var(--text-black);
   }
 </style>

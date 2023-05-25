@@ -1,54 +1,95 @@
----
-import Button from "../components/Button.astro";
----
-
 <div class="flex_1-1-1">
   <div class="container">
     <img src="img/forside/forside1.webp" alt="billede" />
-    <Button variant="primary" size="medium" placement="index"><a href="/allesmykker.html" class="btn">ØRERINGE</a></Button>
+    <a href="/allesmykker.html" class="btn cta">Øreringe</a>
   </div>
   <div class="container">
     <img src="img/forside/forside2.webp" alt="billede" />
-    <Button variant="primary" size="medium" placement="index"><a href="/allesmykker.html" class="btn">RINGE</a></Button>
+    <a href="/halskæder.html" class="btn cta">Ringe</a>
   </div>
   <div class="container">
     <img src="img/forside/forside3.webp" alt="billede" />
-    <Button variant="primary" size="medium" placement="index"><a href="/halskæder.html" class="btn">HALSKÆDER</a></Button>
+    <a href="/halskæder.html" class="btn cta">Halskæder</a>
   </div>
 </div>
 
 <style>
-  .flex_1-1-1 {
-    display: flex;
-    flex-direction: row;
-    gap: 50px;
-    margin: 80px 120px 80px 120px;
-  }
-  @media (max-width: 1000px) {
+  @media (min-width: 1000px) {
     .flex_1-1-1 {
-      flex-direction: column;
-      margin: 50px 80px 50px 80px;
+      display: flex;
+      flex-direction: row;
+      column-gap: 50px;
+      margin: 70px 140px 70px 140px;
     }
   }
+
+  @media (max-width: 1000px) {
+    .flex_1-1-1 {
+      display: flex;
+      flex-direction: row;
+      gap: 50px;
+      margin: 65px 70px 45px 70px;
+    }
+  }
+
+  @media (max-width: 800px) {
+    .flex_1-1-1 {
+      flex-direction: column;
+      margin: 70px 70px 50px 70px;
+      gap: 20px;
+    }
+  }
+  /*
+    @media (max-width: 900px) {
+    .grid_1-1-1 {
+      display: grid;
+      grid-template-columns: auto auto auto;
+      transform: scale(1.05);
+      gap: 50px;
+      margin: 35px 70px 35px 70px;
+    }
+  }
+
+  @media (max-width: 600px) {
+    .grid_1-1-1 {
+      display: grid;
+      grid-template-columns: auto;
+      transform: scale(1.05);
+      gap: 50px;
+      margin: 45px 70px 40px 70px;
+    }
+  }
+  */
 
   .container {
     position: relative;
     width: 100%;
+    height: 100%;
   }
 
   .container img {
     width: 100%;
     height: auto;
   }
-  .btn {
+  .container .btn {
     position: absolute;
-    top: 50%;
+    top: 80%;
     left: 50%;
     transform: translate(-50%, -50%);
+  }
+
+  .cta {
     color: var(--surface-white);
     border: solid var(--surface-white) 0.1rem;
+    text-transform: uppercase;
     background: none;
+    font-family: "Hubballi", cursive;
+    font-size: 22px;
     padding-block: 0.6rem;
-    padding-inline: 4rem;
+    padding-inline: 3rem;
+  }
+
+  .cta:hover {
+    scale: 1.01;
   }
 </style>

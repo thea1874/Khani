@@ -16,7 +16,7 @@
   --font-size-h1: 40px;
   --font-size-h2: 30px;
   --font-size-h3: 30px;
-  --font-size-p: 14px;
+  --font-size-p: 11pt;
   --font-size-dropdown: 13px;
   --font-size-footer: 13px;
 
@@ -85,4 +85,9 @@ p {
   font-family: "Montserrat", sans-serif;
   font-weight: var(--font-weight-400);
   font-size: var(--font-size-p);
+}
+
+a {
+  text-decoration: none;
+  list-style-type: none;
 }
