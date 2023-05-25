@@ -2,23 +2,25 @@
 const { baggrund, text } = Astro.props;
 ---
 
-<div>
-  <img class="billede" src={baggrund} alt="" />
-  <h1 class="centered">{text}</h1>
+<div class="container">
+  <img src={baggrund} alt="" />
+  <h1 class="text-center">{text}</h1>
 </div>
 
 <style>
-  .centered {
+  .container {
+    text-align: center;
+    position: relative;
+  }
+  .text-center {
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    color: white;
   }
 
-  .billede {
-    width: 100%;
-    max-height: 370px;
-    display: block;
+  h1 {
+    color: var(--text-white);
+    font-size: var(--font-size-display);
   }
 </style>
