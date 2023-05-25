@@ -4,7 +4,7 @@ const { id, NAME, IMG, PRIS } = Astro.props;
 
 <article>
   <figure class="container1">
-    <img src={`/img/${IMG}`} alt="" height="250" width="250" />
+    <a href="/produktside"><img src={`/img/${IMG}`} alt="" height="250" width="250" /></a>
     <h3 class="navn">{NAME}</h3>
     <p class="pris">{PRIS}</p>
   </figure>
