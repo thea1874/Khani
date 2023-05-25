@@ -10,8 +10,8 @@ import Footer from "../components/Footer.astro";
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <meta name="viewport" content="width=device-width" />
     <meta name="generator" content={Astro.generator} />
-    <link rel="stylesheet" href="src/styles/generel.css" />
-    <link rel="stylesheet" href="src/styles/kontakt.css" />
+    <link rel="stylesheet" href="/styles/generel.css" />
+  
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500&display=swap" rel="stylesheet" />
@@ -30,7 +30,7 @@ import Footer from "../components/Footer.astro";
   <body>
     <Displaybillede baggrund="img/kontakt/kontakt.webp" text="KONTAKT" />
 
-    <h2>SKRIV TIL OS</h2>
+    <h2>SKRIV TIL OS 2</h2>
 
     <div class="form">
       <form>
@@ -50,22 +50,86 @@ import Footer from "../components/Footer.astro";
     <section>
       <div class="kontaktgrid">
         <div class="shadow">
-          <img src="img/kontakt/kontakt1.webp" alt="billede" />
+          <img src="/img/kontakt/kontakt1.webp" alt="billede" />
         </div>
 
         <div class="shadow">
-          <img src="img/kontakt/kontakt2.webp" alt="billede" />
+          <img src="/img/kontakt/kontakt2.webp" alt="billede" />
         </div>
 
         <div class="shadow">
-          <img src="img/kontakt/kontakt3.webp" alt="billede" />
+          <img src="/img/kontakt/kontakt3.webp" alt="billede" />
         </div>
 
         <div class="shadow">
-          <img src="img/kontakt/kontakt4.webp" alt="billede" />
+          <img src="/img/kontakt/kontakt4.webp" alt="billede" />
         </div>
       </div>
     </section>
     <Footer />
   </body>
 </html>
+
+
+<style>
+h2{
+  margin-top: 20px;
+  text-align: center;
+}
+form {
+  text-align: center;
+  padding-bottom: 70px;
+}
+
+input {
+  background-color: var(--surface-beige);
+  border: none;
+  padding: 10px;
+  
+}
+
+input[type="submit"] {
+  border: 1px solid var(--brand-color);
+  background-color: white;
+}
+
+input[type="submit"]:hover {
+  background-color: rgb(84, 191, 212);
+  color: white;
+}
+#email{
+  width:40%;
+  margin-top: 15px;
+}
+#kommentar {
+  width: 40%;
+  height: 100px;
+  padding: 12px 20px;
+  resize: none;
+  margin-top: 15px;
+  margin-bottom: 20px;
+}
+
+#navn
+{
+  width: 19%;
+  margin-right: 10px;
+}
+#telefon{
+  width: 20%;
+}
+
+@media (min-width: 700px) {
+  .kontaktgrid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 30px;
+    margin: auto;
+    margin-block: 60px;
+    width: 90%;
+    place-content: center;
+  }
+}
+
+
+</style>
