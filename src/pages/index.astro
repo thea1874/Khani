@@ -12,7 +12,6 @@ import Gaveide from "../components/Gaveide.astro";
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <meta name="viewport" content="width=device-width" />
     <link rel="stylesheet" href="/styles/generel.css" />
-    <link rel="stylesheet" href="/styles/index.css" />
     <meta name="generator" content={Astro.generator} />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -37,4 +36,24 @@ import Gaveide from "../components/Gaveide.astro";
     <Gaveide />
     <Footer />
   </body>
+
+  <style>
+    h2 {
+      color: var(--text-blue);
+      text-align: center;
+      text-transform: uppercase;
+    }
+
+    h3 {
+      text-transform: uppercase;
+      margin-bottom: 10px;
+    }
+
+    a {
+      list-style-type: none;
+      text-decoration: none;
+      color: var(--text-white);
+      font-family: "Hubballi", cursive;
+    }
+  </style>
 </html>

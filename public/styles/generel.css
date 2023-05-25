@@ -15,8 +15,9 @@
   --font-size-h1: 70px;
   --font-size-h2: 35px;
   --font-size-h3: 30px;
-  --font-size-p: 17px;
+  --font-size-p: 14px;
   --font-size-dropdown: 13px;
+  --font-size-footer: 13px;
 
   /* Line Height */
   --line-height-h2: 4ch;
@@ -56,7 +57,7 @@ h1 {
 }
 
 h2 {
-  font-family: "Playfair Display", serif;
+  font-family: "Montserrat", sans-serif;
   font-weight: 400;
   font-size: var(--font-size-h2);
   line-height: var(--line-height-h2);
@@ -69,7 +70,7 @@ h3 {
 }
 
 p {
-  font-family: "Open Sans", sans-serif;
+  font-family: "Montserrat", sans-serif;
   font-weight: 400;
   font-size: var(--font-size-p);
 }
