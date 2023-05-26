@@ -1,0 +1,33 @@
+<h3>Find din inspiration på vores Instagram:</h3>
+<div class="grid_1-1-1-1">
+  <img src="img/forside/insta1.webp" alt="" />
+  <img src="img/forside/insta2.webp" alt="" />
+  <img src="img/forside/insta3.webp" alt="" />
+  <img src="img/forside/insta3.webp" alt="" />
+</div>
+
+<style>
+  h3 {
+    color: var(--text-blue);
+    text-align: center;
+    margin-top: 80px;
+  }
+
+  @media (min-width: 600px) {
+    .grid_1-1-1-1 {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      margin: 40px 0px 80px 0px;
+    }
+  }
+
+  @media (max-width: 600px) {
+    .grid_1-1-1-1 {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      margin: 40px 0px 80px 0px;
+      gap: 35px;
+      padding: 35px;
+    }
+  }
+</style>
