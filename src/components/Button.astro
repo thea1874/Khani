@@ -55,7 +55,7 @@ const { variant = "primary", size = "medium", placement = "index" } = Astro.prop
     font-family: "Hubballi", cursive;
     font-size: 15px;
     padding-block: 0.6rem;
-    padding-inline: 3rem;
+    padding-inline: 3.1rem;
   }
 
   /* Placement */
@@ -63,6 +63,10 @@ const { variant = "primary", size = "medium", placement = "index" } = Astro.prop
   [data-placement="index"] {
     align-items: center;
     margin: 0 auto;
+  }
+
+  [data-placement="shop"] {
+    align-items: left;
   }
   [data-placement="giftidea"] {
     align-items: left;
