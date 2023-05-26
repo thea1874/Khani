@@ -5,6 +5,8 @@ import Button from "../components/Button.astro";
 import Category from "../components/Category.astro";
 import Gaveide from "../components/Gaveide.astro";
 import Insta from "../components/Insta.astro";
+import Shelf2 from "../components/Shelf2.astro";
+import Productcard from "../components/Productcard.astro";
 ---
 
 <html lang="en">
@@ -29,6 +31,12 @@ import Insta from "../components/Insta.astro";
       <h2 style="text-align: center; margin-bottom: 30px;">Find dine vandfaste smykker her</h2>
       <Button variant="secondary" size="large" placement="index"><a href="#" style="color: var(--text-blue)">SHOP</a></Button>
     </div>
+    <Shelf2>
+      <Productcard img="/img/forside/product1.webp" NAME="XENA guld" PRIS="159 DKK" />
+      <Productcard img="/img/forside/product2.webp" NAME="ALYSIDA guld" PRIS="159 DKK" />
+      <Productcard img="/img/forside/product3.webp" NAME="ANKYRA sølv" PRIS="159 DKK" />
+      <Productcard img="/img/forside/product4.webp" NAME="AGETHE guld" PRIS="139 DKK" />
+    </Shelf2>
     <Category />
     <Gaveide />
     <Insta />
@@ -44,7 +52,7 @@ import Insta from "../components/Insta.astro";
     }
 
     .margin {
-      margin: 0px 0px 50px 0px;
+      margin: 0px 0px 60px 0px;
     }
   </style>
 </html>

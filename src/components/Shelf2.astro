@@ -1,0 +1,46 @@
+<section>
+  <ul class="grid-container">
+    <slot />
+  </ul>
+</section>
+
+<style>
+  section {
+    display: grid;
+    grid-auto-rows: min-content;
+  }
+
+  @media (min-width: 1200px) {
+    .grid-container {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      column-gap: 40px;
+      row-gap: 40px;
+      padding: 70px 140px;
+      background-color: var(--surface-beige);
+    }
+  }
+
+  @media (max-width: 1200px) {
+    .grid-container {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      padding: 35px 70px;
+      column-gap: 35px;
+      background-color: var(--surface-beige);
+    }
+  }
+
+  @media (max-width: 800px) {
+    .grid-container {
+      display: grid;
+      grid-template-columns: auto;
+      row-gap: 35px;
+      padding: 80px;
+    }
+  }
+
+  ul[class] {
+    list-style: none;
+  }
+</style>
