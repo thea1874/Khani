@@ -31,6 +31,7 @@ import Productcard from "../components/Productcard.astro";
       <h2 style="text-align: center; margin-bottom: 30px;">Find dine vandfaste smykker her</h2>
       <Button variant="secondary" size="large" placement="index"><a href="#" style="color: var(--text-blue)">SHOP</a></Button>
     </div>
+    <h3 class="baggrund">Mest populære smykker:</h3>
     <Shelf2>
       <Productcard img="/img/forside/product1.webp" NAME="XENA guld" PRIS="159 DKK" />
       <Productcard img="/img/forside/product2.webp" NAME="ALYSIDA guld" PRIS="159 DKK" />
@@ -53,6 +54,15 @@ import Productcard from "../components/Productcard.astro";
 
     .margin {
       margin: 0px 0px 60px 0px;
+    }
+
+    .baggrund {
+      background-color: var(--surface-beige);
+    }
+
+    h3 {
+      padding-top: 35px;
+      text-align: center;
     }
   </style>
 </html>
