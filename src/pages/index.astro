@@ -26,11 +26,15 @@ import Productcard from "../components/Productcard.astro";
   </head>
   <Header />
   <body>
-    <div class="margin">
+    <div class="youtubevideo">
+   <iframe width="1000" height="563" src="https://www.youtube.com/embed/OX9mPYRpXvY?autoplay=1&mute=1&controls=0&loop=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+   </div>
+   <div class="margin">
       <h1>Khani smykker</h1>
       <h2 style="text-align: center; margin-bottom: 30px;">Find dine vandfaste smykker her</h2>
       <Button variant="secondary" size="large" placement="index"><a href="#" style="color: var(--text-blue)">SHOP</a></Button>
     </div>
+    <h3 class="baggrund">Mest populære smykker:</h3>
     <Shelf2>
       <Productcard img="/img/forside/product1.webp" NAME="XENA guld" PRIS="159 DKK" />
       <Productcard img="/img/forside/product2.webp" NAME="ALYSIDA guld" PRIS="159 DKK" />
@@ -51,8 +55,26 @@ import Productcard from "../components/Productcard.astro";
       font-family: "Hubballi", cursive;
     }
 
+    .youtubevideo{
+      text-align: center;
+      display: block;
+    }
+
+    iframe {
+      margin: auto 0px;
+    }
+
     .margin {
       margin: 0px 0px 60px 0px;
+    }
+
+    .baggrund {
+      background-color: var(--surface-beige);
+    }
+
+    h3 {
+      padding-top: 35px;
+      text-align: center;
     }
   </style>
 </html>
