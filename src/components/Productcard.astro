@@ -1,0 +1,24 @@
+---
+const { img, NAME, PRIS } = Astro.props;
+---
+
+<article>
+  <figure class="container1">
+    <a href="/produktside"><img src={img} alt="" height="250" width="250" /></a>
+    <h3 class="navn">{NAME}</h3>
+    <p class="pris">{PRIS}</p>
+  </figure>
+</article>
+
+<style>
+  h3 {
+    font-size: 21px;
+    margin-top: 5px;
+    font-weight: bold;
+    text-align: left;
+  }
+
+  p {
+    text-align: left;
+  }
+</style>

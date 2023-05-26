@@ -28,6 +28,10 @@ const { variant = "primary", size = "medium", placement = "index" } = Astro.prop
 
   [data-variant="tertiary"] {
     display: flex;
+    background-color: var(--surface-white);
+    border: solid var(--surface-black) 0.1rem;
+  }
+  [data-variant="quaternary"] {
     background-color: var(--surface-beige);
     border: solid var(--surface-black) 0.1rem;
   }
