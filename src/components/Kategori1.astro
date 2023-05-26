@@ -1,0 +1,98 @@
+<div class="flex_1-1-1">
+    <div class="container">
+      <img src="/img/shop/allesmykker.webp" alt="billede" />
+      <a href="/allesmykker.html" class="btn cta">Alle smykker</a>
+    </div>
+    <div class="container">
+      <img src="/img/shop/guld.webp" alt="billede" />
+      <a href="/halskæder.html" class="btn cta">Guld</a>
+    </div>
+    <div class="container">
+      <img src="/img/shop/sølv4.webp" alt="billede" />
+      <a href="/halskæder.html" class="btn cta">Sølv</a>
+    </div>
+    <div class="container">
+        <img src="/img/shop/øreringe.webp" alt="billede" />
+        <a href="/halskæder.html" class="btn cta">Øreringe</a>
+      </div>
+  </div>
+
+  <div class="flex_1-1-1">
+    <div class="container">
+      <img src="/img/shop/armbånd.webp" alt="billede" />
+      <a href="/allesmykker.html" class="btn cta">Armbånd</a>
+    </div>
+    <div class="container">
+      <img src="/img/shop/ringe.webp" alt="billede" />
+      <a href="/halskæder.html" class="btn cta">Ringe</a>
+    </div>
+    <div class="container">
+      <img src="/img/shop/halskæder5.webp" alt="billede" />
+      <a href="/halskæder.html" class="btn cta">halskæder</a>
+    </div>
+    <div class="container">
+        <img src="/img/shop/sæt.webp" alt="billede" />
+        <a href="/halskæder.html" class="btn cta">Sæt</a>
+      </div>
+  </div>
+  
+  
+  <style>
+    @media (min-width: 1000px) {
+      .flex_1-1-1 {
+        display: flex;
+        flex-direction: row;
+        column-gap: 50px;
+        margin: 70px 140px 70px 140px;
+      }
+    }
+  
+    @media (max-width: 1000px) {
+      .flex_1-1-1 {
+        display: flex;
+        flex-direction: row;
+        gap: 50px;
+        margin: 65px 70px 45px 70px;
+      }
+    }
+  
+    @media (max-width: 800px) {
+      .flex_1-1-1 {
+        flex-direction: column;
+        margin: 70px 70px 50px 70px;
+        gap: 20px;
+      }
+    }
+  
+    .container {
+      position: relative;
+      width: 100%;
+      height: 100%;
+    }
+  
+    .container img {
+      width: 100%;
+      height: auto;
+    }
+    .container .btn {
+      position: absolute;
+      top: 80%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+  
+    .cta {
+      color: var(--surface-white);
+      border: solid var(--surface-white) 0.1rem;
+      text-transform: uppercase;
+      background: none;
+      font-family: "Hubballi", cursive;
+      font-size: 22px;
+      padding-block: 0.6rem;
+      padding-inline: 3rem;
+    }
+  
+    .cta:hover {
+      scale: 1.01;
+    }
+  </style> 
