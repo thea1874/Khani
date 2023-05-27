@@ -26,7 +26,10 @@ import Productcard from "../components/Productcard.astro";
   </head>
   <Header />
   <body>
-    <div class="margin">
+    <div class="youtubevideo">
+   <iframe width="1000" height="563" src="https://www.youtube.com/embed/OX9mPYRpXvY?controls=0&loop=1&autoplay=1&mute=1&playlist=OX9mPYRpXvY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+   </div>
+   <div class="margin">
       <h1>Khani smykker</h1>
       <h2 style="text-align: center; margin-bottom: 30px;">Find dine vandfaste smykker her</h2>
       <Button variant="secondary" size="large" placement="index"><a href="#" style="color: var(--text-blue)">SHOP</a></Button>
@@ -50,6 +53,15 @@ import Productcard from "../components/Productcard.astro";
       text-decoration: none;
       color: var(--text-white);
       font-family: "Hubballi", cursive;
+    }
+
+    .youtubevideo{
+      text-align: center;
+      display: block;
+    }
+
+    iframe {
+      margin: auto 0px;
     }
 
     .margin {
