@@ -40,31 +40,35 @@ import Button from "../components/Button.astro";
         </div>
       </div>
     </div>
-    <div class="grid_1-1">
-      <div class="container_1-1">
-        <img src="/img/medusa2.webp" alt="billede" />
-        <img class="billede4" src="/img/medusa3.webp" alt="billede" />
-      </div>
-      <div>
-        <ul>
-          <li><p>Udført i rustfrit stål af kirurgisk kvalitet</p></li>
-          <li><p>Vandfast - tåler havet, poolen og bruseren</p></li>
-          <li><p>Ingen grønne misfarvninger på huden</p></li>
-          <li><p>Rustfrie og allergivenlige smykker</p></li>
-          <li><p>Guld: Guldbelagt i en kvalitet på hele 14K (karat)</p></li>
-        </ul>
+    <div class="grid_1-1-1">
+      <div id="inner-grid">
+        <div>
+          <img src="/img/medusa2.webp" alt="billede" />
+        </div>
+        <div>
+          <img class="billede4" src="/img/medusa3.webp" alt="billede" />
+        </div>
+
+        <div>
+          <ul>
+            <li><p>Udført i rustfrit stål af kirurgisk kvalitet</p></li>
+            <li><p>Vandfast - tåler havet, poolen og bruseren</p></li>
+            <li><p>Ingen grønne misfarvninger på huden</p></li>
+            <li><p>Rustfrie og allergivenlige smykker</p></li>
+            <li><p>Guld: Guldbelagt i en kvalitet på hele 14K (karat)</p></li>
+          </ul>
+        </div>
       </div>
     </div>
-  </body>
 
-  <style>
-    input {
-      background-color: var(--surface-beige);
-      border: none;
-      padding: 10px 60px 10px 10px;
-    }
+    <style>
+      input {
+        background-color: var(--surface-beige);
+        border: none;
+        padding: 10px 60px 10px 10px;
+      }
 
-    /*
+      /*
       .grid_1-1 {
         display: grid;
         margin: 70px 140px 70px 140px;
@@ -76,14 +80,14 @@ import Button from "../components/Button.astro";
       }
        */
 
-    .billede3 {
-      max-width: 100px;
-    }
-    .billede4 {
-      max-width: 100px;
-    }
+      .billede3 {
+        max-width: 100px;
+      }
+      .billede4 {
+        max-width: 100px;
+      }
 
-    /*
+      /*
       @media (min-width: 500px) {
         .grid_1-1 {
           margin: 70px 140px 70px 140px;
@@ -95,63 +99,65 @@ import Button from "../components/Button.astro";
 
        */
 
-    @media (min-width: 1000px) {
-      .grid_1-1 {
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        margin: 0px 140px 0px 140px;
-        column-gap: 60px;
+      @media (min-width: 1000px) {
+        .grid_1-1 {
+          display: grid;
+          grid-template-columns: repeat(2, 1fr);
+          margin: 0px 140px 0px 140px;
+          column-gap: 60px;
+          grid-auto-flow: column;
+        }
       }
-    }
 
-    .container_1-1 {
-      display: flex;
-    }
+      .container_1-1 {
+        display: flex;
+      }
 
-    h2 {
-      font-size: var(--font-size-h1);
-      line-height: 3ch;
-      margin-top: 20px;
-    }
+      h2 {
+        font-size: var(--font-size-h1);
+        line-height: 3ch;
+        margin-top: 20px;
+      }
 
-    h3 {
-      font-size: 24px;
-    }
+      h3 {
+        font-size: 24px;
+      }
 
-    .info {
-      color: #b5b5b5;
-      line-height: 2ch;
-    }
+      .info {
+        color: #b5b5b5;
+        line-height: 2ch;
+      }
 
-    .price {
-      font-size: 26px;
-      line-height: 4ch;
-      font-weight: var(--font-weight-500);
-    }
+      .price {
+        font-size: 26px;
+        line-height: 4ch;
+        font-weight: var(--font-weight-500);
+      }
 
-    .container {
-      margin: 35px 0px 25px 0px;
-    }
+      .container {
+        margin: 35px 0px 25px 0px;
+      }
 
-    .containerbtn {
-      margin: 35px 0px 0px 0px;
-    }
+      .containerbtn {
+        margin: 35px 0px 0px 0px;
+      }
 
-    h3 {
-      line-height: 4ch;
-    }
+      h3 {
+        line-height: 4ch;
+      }
 
-    .billede {
-      margin-right: 30px;
-    }
+      .billede {
+        margin-right: 30px;
+      }
 
-    p {
-      line-height: 5ch;
-    }
+      p {
+        line-height: 5ch;
+      }
 
-    ul {
-      margin-top: 40px;
-      margin-left: 15px;
-    }
-  </style>
+      ul {
+        margin-top: 40px;
+        margin-left: 15px;
+      }
+    </style>
+  </body>
 </html>
