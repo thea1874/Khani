@@ -12,6 +12,7 @@ const data = await response.json();
 import Header from "../components/Header.astro";
 import Allesmykker from "../components/Allesmykker.astro";
 import Shelf from "../components/Shelf.astro";
+import Footer from "../components/Footer.astro";
 ---
 
 <html lang="en">
@@ -41,7 +42,7 @@ import Shelf from "../components/Shelf.astro";
       })
     }
   </Shelf>
-
+  <Footer />
   <style>
     h1 {
       margin-bottom: 60px;

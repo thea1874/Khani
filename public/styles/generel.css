@@ -40,7 +40,8 @@
   box-sizing: border-box;
   scroll-behavior: smooth;
 }
-img {
+img,
+video {
   width: 100%;
   display: block;
   height: auto;

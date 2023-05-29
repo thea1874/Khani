@@ -1,30 +1,18 @@
 <div class="baggrund">
-    <h2>GAVEINSPIRATION</h2>
-<div class="grid_1-1">
-<div>
-<p>Hvor finder jeg den perfekte til konfirmation, studenterguilde eller måske mors dag?
- Det kan vi heldigvis hjælpe dig med lige her! Du er måske ude i sidste øjeblik,
-og anledningen nærmer sig med hastige skridt? Bare rolig, vi har alle været der,
-og du er havnet det helt rigtige sted. Her har vi nemlig samlet vores bud på gaver,
-du kan give til de en, du holder af.
-</p></div>
-<div><p> Du kan blandt andet finde den perfekte gave til studinen, konfirmanden eller gaver til under 200 kroner.
- Derudover sælger vi også gavekort, hvis det er lidt svært at vælge. Du kan finde inspiration lige herunder. 
-Vi har mere end 100 forskellige smykker, så der er noget til enhver smag! Vi tilbyder også indpakning af gaver ved kassen.
- Tjek det ud!
-</p></div>
-</div>
+  <h2>GAVEINSPIRATION</h2>
+  <div class="grid_1-1">
+    <p>Hvor finder jeg den perfekte til konfirmation, studenterguilde eller måske mors dag? Det kan vi heldigvis hjælpe dig med lige her! Du er måske ude i sidste øjeblik, og anledningen nærmer sig med hastige skridt? Bare rolig, vi har alle været der, og du er havnet det helt rigtige sted. Her har vi nemlig samlet vores bud på gaver, du kan give til de en, du holder af.</p>
+    <p>Du kan blandt andet finde den perfekte gave til studinen, konfirmanden eller gaver til under 200 kroner. Derudover sælger vi også gavekort, hvis det er lidt svært at vælge. Du kan finde inspiration lige herunder. Vi har mere end 100 forskellige smykker, så der er noget til enhver smag! Vi tilbyder også indpakning af gaver ved kassen. Tjek det ud!</p>
+  </div>
 
-<div class="flex_1-1-1">
+  <div class="flex_1-1-1">
     <div class="container">
       <img src="/img/shop/gave1.webp" alt="billede" />
       <a href="/allesmykker.html" class="btn cta">Gavekort</a>
-      
     </div>
     <div class="container">
       <img src="/img/shop/øreringe2.webp" alt="billede" />
       <a href="/allesmykker.html" class="btn cta">Student</a>
-    
     </div>
     <div class="container">
       <img src="/img/shop/ring45.webp" alt="billede" />
@@ -33,25 +21,51 @@ Vi har mere end 100 forskellige smykker, så der er noget til enhver smag! Vi ti
   </div>
 </div>
 
-
-
 <style>
-.baggrund{
+  .baggrund {
     background-color: var(--surface-beige);
-}
- h2{
-    margin-left: 100px;
+  }
+  h2 {
+    margin-left: 140px;
     padding-top: 50px;
- }
+  }
 
   .grid_1-1 {
-    margin: 50px 50px 50px 50px;
-    grid-template-columns: auto auto;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    margin: 20px 140px 70px 140px;
+    column-gap: 100px;
   }
 
   p {
-    margin: 0px 50px 20px 0px;
-    line-height: 3.5ch;
+    line-height: var(--line-height-p);
+    max-width: 60ch;
+  }
+
+  @media (max-width: 1000px) {
+    .grid_1-1 {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      margin: 35px 70px;
+      column-gap: 100px;
+    }
+    p {
+      line-height: var(--line-height-p);
+      max-width: 70ch;
+    }
+
+    h2 {
+      margin-left: 70px;
+      padding-top: 50px;
+    }
+  }
+
+  @media (max-width: 800px) {
+    .grid_1-1 {
+      display: flex;
+      flex-direction: column;
+      row-gap: 50px;
+    }
   }
 
   .container {
@@ -63,7 +77,6 @@ Vi har mere end 100 forskellige smykker, så der er noget til enhver smag! Vi ti
   .container img {
     width: 100%;
     height: auto;
-
   }
 
   .container .btn {
@@ -87,19 +100,19 @@ Vi har mere end 100 forskellige smykker, så der er noget til enhver smag! Vi ti
   .cta:hover {
     scale: 1.01;
   }
- 
+  /*
   @media (min-width: 500px) {
     .grid_1-1 {
       display: grid;
       grid-template-columns: repeat(auto-fill, minmax(500px, 1fr));
-      margin: 120px 100px 120px 100px;
     }
     p {
-      margin: 0px 50px 90px 0px;
+      margin: 0px 20px 20px 0px;
       line-height: var(--line-height-p);
     }
   }
 
+  */
 
   @media (min-width: 1000px) {
     .flex_1-1-1 {
@@ -107,6 +120,7 @@ Vi har mere end 100 forskellige smykker, så der er noget til enhver smag! Vi ti
       flex-direction: row;
       column-gap: 50px;
       margin: 70px 140px 70px 140px;
+      padding-bottom: 70px;
     }
   }
 
@@ -116,6 +130,7 @@ Vi har mere end 100 forskellige smykker, så der er noget til enhver smag! Vi ti
       flex-direction: row;
       gap: 50px;
       margin: 65px 70px 45px 70px;
+      padding-bottom: 70px;
     }
   }
 
@@ -126,6 +141,4 @@ Vi har mere end 100 forskellige smykker, så der er noget til enhver smag! Vi ti
       gap: 20px;
     }
   }
-</style>
-
 </style>

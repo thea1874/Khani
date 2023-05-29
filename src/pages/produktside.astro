@@ -2,6 +2,8 @@
 import Header from "../components/Header.astro";
 import Footer from "../components/Footer.astro";
 import Button from "../components/Button.astro";
+import Shelf2 from "../components/Shelf2.astro";
+import Productcard from "../components/Productcard.astro";
 ---
 
 <html lang="en">
@@ -54,13 +56,13 @@ import Button from "../components/Button.astro";
         <img class="img3" src="/img/medusa3.webp" class="hide" alt="Medusa halskæde" />
       </div>
     </div>
-    <h3 class="styles">ANDRE STYLES DU MÅSKE SYNES OM</h3>
-    <div class="grid_1-1-1-1">
-      <img src="/img/product/gynaika1.webp" alt="beige" />
-      <img src="/img/product/hefaistos4.webp" alt="butter" />
-      <img src="/img/product/helioss2.webp" alt="orange" />
-      <img src="/img/product/symposio3.webp" alt="beige" />
-    </div>
+    <h3 class="baggrund styles">Andre styles du måske synes om</h3>
+    <Shelf2>
+      <Productcard img="/img/product/gynaika1.webp" NAME="GYNAIKA guld" PRIS="139 DKK" />
+      <Productcard img="/img/product/helioss2.webp" NAME="HELIOSS sølv" PRIS="129 DKK" />
+      <Productcard img="/img/product/symposio3.webp" NAME="SYMPOSIO sølv" PRIS="149 DKK" />
+      <Productcard img="/img/product/hefaistos4.webp" NAME="HEFAISTOS guld" PRIS="129 DKK" />
+    </Shelf2>
     <Footer />
   </body>
   <style>
@@ -72,6 +74,10 @@ import Button from "../components/Button.astro";
       background-color: var(--surface-beige);
       border: none;
       padding: 10px 34px 10px 10px;
+    }
+
+    .baggrund {
+      background-color: var(--surface-beige);
     }
 
     .img1 {
@@ -95,11 +101,6 @@ import Button from "../components/Button.astro";
     .grid-1-1 {
       display: grid;
       grid-template-columns: 1fr 1fr;
-    }
-    .grid_1-1-1-1 {
-      display: grid;
-      grid-template-columns: 1fr 1fr 1fr 1fr;
-      background-color: var(--surface-beige);
     }
 
     .produktinfo {
@@ -145,6 +146,7 @@ import Button from "../components/Button.astro";
       text-align: center;
       background-color: var(--surface-beige);
       padding-top: 20px;
+      text-transform: uppercase;
     }
 
     @media (min-width: 1200px) {
@@ -159,14 +161,6 @@ import Button from "../components/Button.astro";
         grid-column: 1;
         grid-row: 1;
         row-gap: 20px;
-      }
-
-      .grid_1-1-1-1 {
-        grid-column: 1;
-        grid-row: 1;
-        padding: 20px 140px 70px 140px;
-        column-gap: 20px;
-        margin-bottom: 70px;
       }
     }
 
@@ -228,14 +222,6 @@ import Button from "../components/Button.astro";
         justify-content: space-between;
         margin-top: 10px;
       }
-
-      .grid_1-1-1-1 {
-        grid-column: 1;
-        grid-row: 1;
-        padding: 20px 70px 50px 70px;
-        column-gap: 20px;
-        margin-bottom: 70px;
-      }
     }
 
     @media only screen and (max-width: 800px) {
@@ -255,14 +241,6 @@ import Button from "../components/Button.astro";
 
       .produktinfo {
         padding: 10px;
-      }
-
-      .grid_1-1-1-1 {
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        margin: 0px 0px 80px 0px;
-        gap: 35px;
-        padding: 15px 35px 35px 35px;
       }
 
       .styles {
