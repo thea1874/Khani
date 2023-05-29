@@ -26,8 +26,10 @@ import Productcard from "../components/Productcard.astro";
   </head>
   <Header />
   <body>
-    <div class="container">
-      <iframe class="responsive-iframe" src="https://www.youtube.com/embed/OX9mPYRpXvY?controls=0&loop=1&autoplay=1&mute=1&playlist=OX9mPYRpXvY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+    <div class="video-container">
+      <div class="container">
+        <iframe class="responsive-iframe" src="https://www.youtube.com/embed/OX9mPYRpXvY?controls=0&loop=1&autoplay=1&mute=1&playlist=OX9mPYRpXvY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+      </div>
     </div>
     <div class="margin">
       <h1>Khani smykker</h1>
@@ -47,13 +49,18 @@ import Productcard from "../components/Productcard.astro";
     <Footer />
   </body>
 
-  width="1000" height="563"
   <style>
     a {
       list-style-type: none;
       text-decoration: none;
       color: var(--text-white);
       font-family: "Hubballi", cursive;
+    }
+
+    @media (min-width: 1200px) {
+      .video-container {
+        margin-inline: 140px;
+      }
     }
 
     .container {

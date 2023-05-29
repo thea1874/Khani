@@ -7,8 +7,10 @@ const { text } = Astro.props;
     <h1>HVEM ER KHANI?</h1>
     <p>Khani blev grundlagt i 2022 af Thea Salmony og Christian Rydahl. Fra Khanis begyndelse har vi skabt vores eget brand, hvor vi udelukkende sælger vandfaste smykker for alle - og til alle. Vores design drager inspiration fra Grækenland, sol og sommer, hvilket afspejler sig i smykkernes udseende og navne.</p>
   </div>
-  <div>
-    <iframe width="560" height="315" src="https://www.youtube.com/embed/2uz2AtrUJdE?start=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+  <div class="video-container">
+    <div class="container">
+      <iframe width="560" height="315" class="responsive-iframe" src="https://www.youtube.com/embed/2uz2AtrUJdE?controls=0&loop=1&autoplay=1&mute=1&playlist=2uz2AtrUJdE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+    </div>
   </div>
 </div>
 
@@ -16,25 +18,67 @@ const { text } = Astro.props;
   h1 {
     text-align: left;
   }
-  .grid_1-1 {
-    margin: 50px 50px 50px 50px;
-    grid-template-columns: auto auto;
-  }
 
   p {
-    margin: 20px 50px 20px 0px;
+    margin: 0px 50px 0px 0px;
     line-height: 3.5ch;
   }
+  .container {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+    padding-top: 56.25%; /* 16:9 Aspect Ratio */
+  }
 
-  @media (min-width: 500px) {
+  .responsive-iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    border: none;
+  }
+
+  @media (min-width: 1200px) {
     .grid_1-1 {
       display: grid;
-      grid-template-columns: repeat(auto-fill, minmax(500px, 1fr));
-      margin: 120px 100px 120px 100px;
+      grid-template-columns: repeat(2, 1fr);
+      margin: 100px 140px 70px 140px;
     }
+
     p {
-      margin: 50px 50px 90px 0px;
-      line-height: var(--line-height-p);
+      margin-top: 20px;
+    }
+  }
+
+  @media (max-width: 1200px) {
+    .grid_1-1 {
+      display: grid;
+      grid-template-columns: 1fr;
+      margin: 70px 140px 0px 100px;
+      row-gap: 50px;
+    }
+
+    p {
+      margin-top: 20px;
+    }
+  }
+
+  @media (max-width: 1000px) {
+    .grid_1-1 {
+      display: grid;
+      grid-template-columns: 1fr;
+      margin: 35px 35px 35px 35px;
+    }
+
+    p {
+      margin-top: 20px;
+    }
+
+    h1 {
+      font-size: var(--font-size-h2);
     }
   }
 </style>
