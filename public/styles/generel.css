@@ -19,6 +19,7 @@
   --font-size-p: 11pt;
   --font-size-dropdown: 13px;
   --font-size-footer: 13px;
+  --font-size-form: 18px;
 
   /* Font-weight */
   --font-weight-700: 700;
@@ -32,6 +33,7 @@
   --line-height-h3: 2.5ch;
   --line-height-p: 3.5ch;
   --line-height-shop: 1.5ch;
+  --line-height-form: 3ch;
 }
 
 * {

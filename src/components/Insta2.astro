@@ -1,0 +1,41 @@
+<h3>Find din inspiration på vores Instagram:</h3>
+
+<div class="grid_1-1-1-1">
+  <div class="instagram-link"><a href="https://www.instagram.com/khanismykker/"><img src="/img/kontakt/kontakt1.webp" alt="billede" /></a></div>
+  <div class="instagram-link"><a href="https://www.instagram.com/khanismykker/"><img src="/img/kontakt/kontakt2.webp" alt="billede" /></a></div>
+  <div class="instagram-link"><a href="https://www.instagram.com/khanismykker/"><img src="/img/kontakt/kontakt3.webp" alt="billede" /></a></div>
+  <div class="instagram-link"><a href="https://www.instagram.com/khanismykker/"><img src="/img/kontakt/kontakt4.webp" alt="billede" /></a></div>
+</div>
+
+<style>
+  h3 {
+    color: var(--text-blue);
+    text-align: center;
+    margin-top: 70px;
+  }
+
+  @media (min-width: 600px) {
+    .grid_1-1-1-1 {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      margin: 40px 70px 70px 70px;
+      column-gap: 30px;
+    }
+  }
+
+  @media (max-width: 600px) {
+    .grid_1-1-1-1 {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      margin: 0px 0px 70px 0px;
+      gap: 35px;
+      padding: 35px;
+    }
+
+    h3 {
+      padding: 20px;
+      font-size: 22px;
+      margin: 20px 0px 0px 0px;
+    }
+  }
+</style>
