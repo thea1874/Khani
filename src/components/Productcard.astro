@@ -12,7 +12,7 @@ const { img, NAME, PRIS } = Astro.props;
 
 <style>
   h3 {
-    font-size: 21px;
+    font-size: 1.2rem;
     margin-top: 5px;
     font-weight: bold;
     text-align: left;
@@ -20,5 +20,33 @@ const { img, NAME, PRIS } = Astro.props;
 
   p {
     text-align: left;
+  }
+
+  @media (max-width: 1200px) {
+    h3 {
+      font-size: 0.9rem;
+      margin-top: 5px;
+      font-weight: bold;
+      text-align: left;
+    }
+
+    p {
+      text-align: left;
+      font-size: 0.7rem;
+    }
+  }
+
+  @media (max-width: 800px) {
+    h3 {
+      font-size: 1.2rem;
+      margin-top: 5px;
+      font-weight: bold;
+      text-align: left;
+    }
+
+    p {
+      text-align: left;
+      font-size: 1rem;
+    }
   }
 </style>

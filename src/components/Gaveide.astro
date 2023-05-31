@@ -7,7 +7,7 @@ import Button from "../components/Button.astro";
     <h2>GAVEIDÈER</h2>
     <p>Hvor finder jeg den perfekte gave til konfirmation, studentergilde eller måske mors dag? Det kan vi heldigvis hjælpe dig med lige her!</p><br />
     <p style="margin-bottom: 30px;">Du er måske ude i sidste øjeblik, og anledningen nærmer sig med hastige skridt? Bare rolig, vi har alle været der, og du er havnet det helt rigtige sted. Her har vi nemlig samlet vores bud på gaver, du kan give til de en, du holder af.</p><br />
-    <Button variant="quaternary" size="medium" placement="giftidea"><a href="/allesmykker.html" class="btn centeredButton">SHOP GAVEIDÈER</a></Button><br />
+    <Button variant="quaternary" size="medium" placement="giftidea"><a href="/#gaveide" class="btn centeredButton">SHOP GAVEIDÈER</a></Button><br />
   </div>
   <div class="order">
     <img src="img/forside/forside_gaveide.webp" alt="" />
@@ -15,13 +15,27 @@ import Button from "../components/Button.astro";
 </div>
 
 <style>
+  p {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 400;
+    line-height: var(--line-height-p);
+  }
+
+  h2 {
+    margin-bottom: 30px;
+  }
+
+  .btn {
+    color: var(--text-black);
+  }
+
   @media (min-width: 1200px) {
     .grid_1-1 {
       display: grid;
-      grid-template-columns: auto auto;
+      grid-template-columns: 1fr 1fr;
       background-color: var(--surface-beige);
       padding: 70px 140px 70px 140px;
-      column-gap: 20px;
+      column-gap: 70px;
     }
 
     p {
@@ -40,24 +54,35 @@ import Button from "../components/Button.astro";
     .grid_1-1 {
       display: grid;
       background-color: var(--surface-beige);
-      padding: 35px 80px 50px 80px;
-      row-gap: 20px;
+      padding: 50px 100px;
+      row-gap: 30px;
     }
 
     .order {
       order: -1;
+      width: 70%;
+      margin-left: auto;
+      margin-right: auto;
     }
 
     img {
-      margin-top: 35px;
       display: block;
       margin-left: auto;
       margin-right: auto;
-      width: 70%;
     }
 
     body {
       text-align: center;
+    }
+
+    p {
+      text-align: left;
+      max-width: 60ch;
+      margin: auto;
+    }
+
+    h2 {
+      margin-bottom: 20px;
     }
   }
 
@@ -65,29 +90,23 @@ import Button from "../components/Button.astro";
     .centeredButton {
       text-align: center;
     }
-  }
 
-  p {
-    font-family: "Open Sans", sans-serif;
-    font-weight: 400;
-    line-height: var(--line-height-p);
-  }
-
-  h2 {
-    margin: 30px 0px 30px 0px;
-  }
-
-  .btn {
-    color: var(--text-black);
-  }
-
-  @media (max-width: 600px) {
     img {
-      margin-top: 35px;
       display: block;
       margin-left: auto;
       margin-right: auto;
       width: 100%;
+    }
+
+    .grid_1-1 {
+      display: grid;
+      background-color: var(--surface-beige);
+      padding: 60px 30px;
+    }
+
+    h2 {
+      margin: 10px 0px 20px 0px;
+      font-size: 1.9rem;
     }
   }
 </style>

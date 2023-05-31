@@ -169,7 +169,7 @@ import Productcard from "../components/Productcard.astro";
         display: grid;
         grid-template-columns: 1fr 1fr;
         column-gap: 70px;
-        padding: 70px 70px;
+        padding: 70px 100px;
       }
 
       .grid-1-1 {
@@ -182,34 +182,34 @@ import Productcard from "../components/Productcard.astro";
         display: table-column;
       }
 
+      .info {
+        font-size: 1.1rem;
+      }
+
       .grid_1-1-1-1 {
         grid-column: 1;
         grid-row: 1;
       }
 
       h2 {
-        font-size: var(--font-size-h2);
-        margin-top: 20px;
+        font-size: 1.6rem;
         line-height: 1.5ch;
+        margin-top: 5px;
       }
       h3 {
-        font-size: 18px;
+        font-size: 1.1rem;
         line-height: 2.5ch;
+        margin-top: 5px;
       }
 
       .price {
-        font-size: 19px;
+        font-size: 1rem;
         line-height: 2ch;
         font-weight: var(--font-weight-500);
       }
 
       .containerbtn {
         margin: 20px 0px 0px 0px;
-      }
-
-      p {
-        line-height: 2.5ch;
-        font-size: 14px;
       }
 
       ul {
@@ -220,6 +220,21 @@ import Productcard from "../components/Productcard.astro";
       .flex_1-1 {
         display: flex;
         justify-content: space-between;
+        margin-top: 30px;
+      }
+
+      .input-container {
+        margin: 5px 0px 0px 0px;
+      }
+    }
+
+    @media (max-width: 1000px) {
+      p {
+        line-height: 2ch;
+        font-size: 0.7rem;
+      }
+
+      .flex_1-1 {
         margin-top: 10px;
       }
     }
@@ -239,16 +254,39 @@ import Productcard from "../components/Productcard.astro";
         display: none;
       }
 
-      .produktinfo {
-        padding: 10px;
-      }
-
       .styles {
         font-size: 20px;
       }
 
       ul {
         font-size: 20px;
+      }
+
+      h2 {
+        font-size: 1.9rem;
+        padding-top: 20px;
+      }
+      h3 {
+        font-size: 1.5rem;
+        padding-top: 15px;
+      }
+
+      .info {
+        padding-top: 5px;
+        font-size: 1.4rem;
+      }
+
+      .price {
+        font-size: 1.4rem;
+        padding-top: 5px;
+      }
+
+      .containerbtn {
+        margin: 40px 0px 0px 0px;
+      }
+
+      p {
+        font-size: var(--font-size-p);
       }
     }
   </style>

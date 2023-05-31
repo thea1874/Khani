@@ -20,8 +20,8 @@ const { text } = Astro.props;
   }
 
   p {
-    margin: 0px 50px 0px 0px;
     line-height: 3.5ch;
+    max-width: 60ch;
   }
   .container {
     position: relative;
@@ -45,7 +45,8 @@ const { text } = Astro.props;
     .grid_1-1 {
       display: grid;
       grid-template-columns: repeat(2, 1fr);
-      margin: 100px 140px 70px 140px;
+      margin: 120px 140px 70px 140px;
+      column-gap: 70px;
     }
 
     p {
@@ -70,7 +71,8 @@ const { text } = Astro.props;
     .grid_1-1 {
       display: grid;
       grid-template-columns: 1fr;
-      margin: 35px 35px 35px 35px;
+      margin: 30px;
+      row-gap: 30px;
     }
 
     p {

@@ -36,7 +36,7 @@ import Burger from "../components/Burger.astro";
     <div class="margin">
       <h1>Khani smykker</h1>
       <h2 style="text-align: center; margin-bottom: 30px;">Find dine vandfaste smykker her</h2>
-      <Button variant="secondary" size="large" placement="index"><a href="#" style="color: var(--text-blue)">SHOP</a></Button>
+      <Button variant="secondary" size="large" placement="index"><a href="/allesmykker" style="color: var(--text-blue)">SHOP</a></Button>
     </div>
     <h3 class="baggrund">Mest populære smykker:</h3>
     <Shelf2>
@@ -55,7 +55,7 @@ import Burger from "../components/Burger.astro";
     a {
       list-style-type: none;
       text-decoration: none;
-      color: var(--text-white);
+      color: var(--surface-white);
       font-family: "Hubballi", cursive;
     }
 
@@ -94,7 +94,7 @@ import Burger from "../components/Burger.astro";
     }
 
     .margin {
-      margin: 0px 0px 60px 0px;
+      margin: 0px 0px 70px 0px;
     }
 
     .baggrund {
@@ -102,12 +102,47 @@ import Burger from "../components/Burger.astro";
     }
 
     h3 {
-      padding-top: 35px;
+      padding-top: 25px;
       text-align: center;
     }
 
     h1 {
-      padding-top: 35px;
+      padding-top: 40px;
+    }
+
+    @media (max-width: 1200px) {
+      h1 {
+        font-size: 2.2rem;
+        padding: 30px 30px 10px 30px;
+      }
+
+      h2 {
+        font-size: 1.7rem;
+      }
+      h3 {
+        font-size: 1.4rem;
+        padding-top: 15px;
+      }
+
+      .margin {
+        margin: 0px 0px 50px 0px;
+      }
+    }
+
+    @media (max-width: 800px) {
+      h1 {
+        font-size: 2.3rem;
+        padding: 25px 30px 10px 30px;
+      }
+
+      h2 {
+        font-size: 1.9rem;
+        padding: 0px 30px 10px 30px;
+      }
+      h3 {
+        font-size: 1.5rem;
+        padding-top: 15px;
+      }
     }
   </style>
 </html>
