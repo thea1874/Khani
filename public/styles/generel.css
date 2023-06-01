@@ -12,14 +12,14 @@
   --text-white: #ffffff;
 
   /* Typografi */
-  --font-size-display: 55px;
-  --font-size-h1: 40px;
-  --font-size-h2: 33px;
-  --font-size-h3: 28px;
-  --font-size-p: 11pt;
-  --font-size-dropdown: 13px;
-  --font-size-footer: 13px;
-  --font-size-form: 18px;
+  --font-size-display: 3.4rem;
+  --font-size-h1: 2.5rem;
+  --font-size-h2: 2.06rem;
+  --font-size-h3: 1.75rem;
+  --font-size-p: 0.9rem;
+  --font-size-dropdown: 0.8rem;
+  --font-size-footer: 0.8rem;
+  --font-size-form: 1.125rem;
 
   /* Font-weight */
   --font-weight-700: 700;
