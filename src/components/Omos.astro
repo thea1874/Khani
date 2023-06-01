@@ -6,21 +6,15 @@ const { text } = Astro.props;
   <div>
     <h1>HVEM ER KHANI?</h1>
     <p>
-      Khani blev grundlagt i 2022 af Thea Salmony og Christian Rydahl. Fra Khanis begyndelse har vi skabt vores eget brand, hvor vi udelukkende sælger vandfaste smykker for alle - og til alle. Vores design drager inspiration fra Grækenland, sol og
-      sommer, hvilket afspejler sig i smykkernes udseende og navne.
+      Khani blev grundlagt i 2022 af Thea Salmony og har efterfølgende fået hendes kæreste Christian Rydahl ansat i virksomheden. Fra Khani's begyndelse har vi skabt vores eget brand, hvor vi udelukkende sælger vandfaste smykker for alle - og til
+      alle. Vores design drager inspiration fra Grækenland, sol og sommer, hvilket afspejler sig i smykkernes udseende og navne.
     </p>
   </div>
   <div class="video-container">
     <div class="container">
-      <iframe
-        width="560"
-        height="315"
-        class="responsive-iframe"
-        src="https://www.makra.dk/kea/video/khanivideo/omkhani_video.mp4"
-        title="YouTube video player"
-        frameborder="0"
-        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-        allowfullscreen></iframe>
+      <video class="responsive-iframe" width="100%" height="100%" controls>
+        <source src="https://www.makra.dk/kea/video/khanivideo/omkhani_video.mp4" type="video/mp4" />
+      </video>
     </div>
   </div>
 </div>
