@@ -36,7 +36,7 @@ import Insta2 from "../components/Insta2.astro";
         <input type="text" id="email" name="email" placeholder="EMAIL" />
         <textarea id="kommentar" name="kommentar" placeholder="KOMMENTAR" style="height:100px"></textarea>
 
-        <input type="submit" value="INSEND" />
+        <input type="submit" value="INDSEND" />
       </form>
     </div>
     <Insta2 />
@@ -87,6 +87,10 @@ import Insta2 from "../components/Insta2.astro";
       font-family: "Hubballi", cursive;
       font-size: var(--font-size-form);
       margin-top: 70px;
+    }
+
+    input[type="submit"]:hover {
+      scale: 1.04;
     }
 
     .grid_1-1 {
