@@ -16,9 +16,15 @@
         <li>@khanismykker</li>
         <li>Adresse: Vangede Bygade, 2820 Gentofte Danmark</li>
         <div class="icons">
-          <a href="https://www.facebook.com/khanismykker" class="fa fa-facebook"></a>
-          <a href="https://www.instagram.com/khanismykker/" class="fa fa-instagram" style="margin-left: 10px"></a>
-          <a href="https://www.tiktok.com/@khanismykker" class="fab fa-tiktok tiktok-icon" style="margin-left: 10px"></a>
+          <div>
+            <a href="https://www.facebook.com/khanismykker" class="fa fa-facebook"></a>
+          </div>
+          <div>
+            <a href="https://www.instagram.com/khanismykker" class="fa fa-instagram" style="margin-left: 10px"></a>
+          </div>
+          <div>
+            <a href="https://www.tiktok.com/@khanismykker" class="tiktok-icon" style="margin-left: 10px"> <img src="/img/tiktok.webp" alt="Tiktok" /></a>
+          </div>
         </div>
       </ul>
     </div>
@@ -30,6 +36,11 @@
   footer {
     background-image: url("/img/Boelge1.svg");
     width: 100%;
+  }
+
+  .icons {
+    margin-top: 10px;
+    display: flex;
   }
 
   @media (max-width: 800px) {
@@ -80,10 +91,6 @@
     line-height: var(--line-height-p);
   }
 
-  .icons {
-    margin-top: 10px;
-  }
-
   .fa {
     padding: 10px;
     width: 35px;
@@ -103,12 +110,7 @@
   }
 
   .tiktok-icon {
-    padding: 10px;
-    width: 35px;
-    text-align: center;
-    text-decoration: none;
-    border-radius: 50%;
-    background: var(--surface-black);
-    color: var(--surface-white);
+    display: block;
+    width: 43%;
   }
 </style>
